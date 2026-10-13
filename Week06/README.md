@@ -20,9 +20,24 @@
 - **실습용**: `TODO` 셀을 학생이 직접 완성 / **완성본**: 정답 코드 (막힐 때 참고, 강의자 시연용)
 - `requirements.txt`: Colab 밖(로컬)에서 실행할 때 필요한 패키지
 
+## ⚠️ 수업 전 준비: 임베딩 모델을 Google Drive에 저장 (강의자, 1회)
+학생 환경에서 모델(약 450MB)을 인터넷으로 내려받으면 너무 느리므로, **강의자 Google Drive에 미리 저장해 두고 학생은 복사해서 사용**합니다.
+
+1. [`Week06_00_강의자용_모델준비.ipynb`](https://colab.research.google.com/github/itlects/2026-1_ai-convergence-apply/blob/main/Week06/Week06_00_%EA%B0%95%EC%9D%98%EC%9E%90%EC%9A%A9_%EB%AA%A8%EB%8D%B8%EC%A4%80%EB%B9%84.ipynb)를 강의자 계정으로 Colab에서 실행 (2~3분)
+2. 모델 저장 위치: `내 드라이브/2026-2강의/동서울대학교/__인공지능융합활용_수789/6주_강의자료/AI융합활용_6주_모델/ko-sroberta-multitask`
+   (Drive 폴더: https://drive.google.com/drive/folders/1CSAgJTuWdpN6csc_MGOFIP6yvzT_e108 , 링크가 있는 모든 사용자: 뷰어)
+3. 마지막 셀에서 ✅ 확인
+
+학생 노트북의 모델 준비 순서 (자동):
+- **방법 1** 공유 링크로 강의자 Drive 폴더(ID `1EmofMTJ6HRQrth8puRpHwvFDJ27YeiVr`)를 복사 — 설정 불필요
+- **방법 2** 방법 1 실패 시: 학생이 모델 폴더 링크를 열어 **내 드라이브에 바로가기 추가** → 드라이브 연결 후 복사
+- **방법 3** 둘 다 실패 시에만 인터넷(Hugging Face)에서 다운로드
+
+> 모델 폴더를 지우거나 새로 만들면 폴더 ID가 바뀌어 학생 노트북이 찾지 못합니다. 덮어쓰기는 준비 노트북을 다시 실행하면 됩니다.
+
 ## 실습 내용
 **Part 1 — 임베딩과 유사도 검색 (무료)**
-0. 환경 준비 (`jhgan/ko-sroberta-multitask` 한국어 임베딩 모델)
+0. 환경 준비 (`jhgan/ko-sroberta-multitask` 한국어 임베딩 모델을 강의자 Drive에서 복사)
 1. 문장 → 임베딩 벡터 2. 코사인 유사도 직접 계산 3. TF-IDF vs 임베딩 비교
 4. 유사도 행렬 히트맵 5. 청킹(size/overlap) 6. 출처가 있는 검색 + 임계값 7. (도전) 나만의 문서 추가
 
