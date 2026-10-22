@@ -1,22 +1,31 @@
-# 강의자 코드 해설
+# 7주차 강의자 노트
 
-- `PdfReader`: PDF 문서 열기. `extract_text()`는 문자 PDF에서만 동작하며 OCR은 별도 처리해야 함.
-- `chunk_words(text,size,overlap)`: 단어 구간 분할, 청크 크기와 겹침을 조정하는 함수.
-- `TfidfVectorizer(analyzer='char', ngram_range=(2,4))`: 한글 문자 조각으로 TF-IDF 생성, 의미 임베딩과 구분.
-- `fit_transform()`: 문서 사전과 벡터 생성. `transform()`: 질문에 같은 사전 적용.
-- `cosine_similarity()`: 문서와 질문의 코사인 유사도.
-- `np.argsort(scores)[::-1]`: 유사도 높은 순서로 정렬.
-- `userdata.get('OPENAI_API_KEY')`: Colab Secrets에서 키 읽기.
-- `OpenAI().responses.create()`: 선택적으로 검색된 근거를 LLM 입력으로 전송.
-- `gr.Interface()`, `gr.Textbox()`, `gr.Checkbox()`, `app.launch()`: Gradio UI 요소.
+## 수업 전 준비 (10분)
+1. 워크북 1·2를 Colab에서 열고 **0번 셀만 실행** → "다운로드 완료 … docs.google.com" 출력 확인
+   - Drive 공유가 바뀌면 GitHub 백업으로 넘어갑니다. 두 경로 모두 실패하면 업로드 창이 뜹니다.
+2. 수업용 OpenAI 키 확인 (6주차와 같은 30일 제한 키, 프로젝트 월 예산 한도 설정)
+3. 워크북 2에서 키를 넣고 "RAG는 무엇의 약어인가요?" 1회 실행해 LLM 답변 확인
 
-## 검증 요약
-- 2개 노트북의 코드 셀 정적 파이썬 AST 파싱 통과.
-- 제공 PDF 실물에서 텍스트 추출 성공: 2페이지 / 청크 5개 / TF-IDF 행렬 (5,1988).
-- RAG, API 키 관리, 청킹 질문 3개 검색 실행 성공.
-- API 호출은 실제 비용 및 키가 필요하므로 수행하지 않았고, Gradio UI의 브라우저 렌더링도 Colab에서는 최종 확인 필요.
+## PDF를 수정하려면
+- Drive `7주_강의자료/week07_course_guide (실습용 PDF 원본)` Google 문서를 편집하면 학생 노트북이 자동으로 새 PDF를 받습니다.
+- 페이지 구분은 각 제목의 "앞에 페이지 나누기" 설정입니다. 내용이 페이지를 넘기면 페이지 번호가 바뀌므로 `week07_faq.csv`의 `answer_page`도 함께 고쳐야 합니다.
+- 수정 후 워크북 1 끝까지 실행해 임계값(`threshold`)이 0.16 근처인지 확인하고, 달라지면 워크북 2의 `THRESHOLD`를 바꿉니다.
+- GitHub `data/` 백업 PDF도 Docs에서 PDF로 다운로드해 교체합니다.
 
-## 수업 진행
-1. PDF를 다운로드해 Colab에 직접 업로드.
-2. 1번 노트북에서 3개 질문 결과와 청크 설정 전후 차이를 작성.
-3. 2번 노트북에서 무료 UI 모드를 기본 실행. API 키가 있는 학습자만 LLM 모드를 선택.
+## 코드 해설
+| 코드 | 설명 | 학생이 자주 묻는 점 |
+| --- | --- | --- |
+| `page.extract_text()` | 문자 PDF에서 글자 추출 | `RAG 의`처럼 공백이 생기는 건 PDF 특성 |
+| `re.sub(r"\s+", " ", text)` | 줄바꿈 정리 | 청크가 줄 단위로 끊기지 않게 함 |
+| `chunk_words()` | 어절 단위 청크, 마지막 단어 도달 시 종료 | 원래 코드는 짧은 중복 꼬리 청크를 만들었음 |
+| `TfidfVectorizer(analyzer="char_wb", ngram_range=(2,3), sublinear_tf=True)` | 어절 안 2~3글자 조각 | `word`로 바꾸면 Top-1이 0.538로 떨어짐 (워크북 1의 비교표) |
+| `retrieve()` | 코사인 유사도 상위 k개 | `np.argsort(...)[::-1]`는 내림차순 |
+| `evaluate()` | CSV로 Top-1/Top-3, 임계값 후보 계산 | Q03은 p.1에도 6주차 설명이 있어 1위를 놓침 → 토론 소재 |
+| `THRESHOLD = 0.16` | 이 값 미만이면 "문서에서 확인할 수 없습니다" | LLM을 부르지 않아 비용도 절약 |
+| `client.responses.create(..., instructions=, input=, temperature=0.2)` | 근거 기반 답변 | 키가 없으면 검색 모드 |
+| `gr.Interface(..., flagging_mode="never")` | 질문·LLM 체크·top_k 슬라이더 → 답변·근거 | Gradio 5 이상 문법 |
+
+## 시간 배분
+- 1교시(50분): 노션 이론 정리 + 머메이드 구조도, 키워드 표
+- 2교시(55분): 워크북 1 — 0~4절(30분), 설정 비교·그래프(15분), 기록표(10분)
+- 3교시(55분): 워크북 2 — 검색기·프롬프트(15분), 키 연결(5분), Gradio(25분), 기록표(10분)
