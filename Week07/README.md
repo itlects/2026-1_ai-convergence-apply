@@ -7,8 +7,7 @@ PDF 텍스트 추출 → 청킹 → TF-IDF 문자 n-gram 검색 → 임계값 �
 | --- | --- | --- |
 | [워크북 1 — PDF 검색과 근거 표시](https://colab.research.google.com/github/itlects/2026-1_ai-convergence-apply/blob/main/Week07/Week07_Workbook1_Student.ipynb) | 추출, 청킹, TF-IDF, 코사인 유사도, CSV 평가(Top-1/Top-3), 임계값 결정 | 불필요 |
 | [워크북 2 — RAG 질의응답 + Gradio](https://colab.research.google.com/github/itlects/2026-1_ai-convergence-apply/blob/main/Week07/Week07_Workbook2_Student.ipynb) | 임계값 판정, 프롬프트 구성, 선택형 LLM 답변, Gradio 화면 | 선택 |
-
-| [예제실습](예제실습.ipynb) | 1교시 기초: 리스트·딕셔너리·튜플·세트, enumerate, 함수, TF-IDF, Gradio echo | 불필요 |
+| [예제실습](https://colab.research.google.com/github/itlects/2026-1_ai-convergence-apply/blob/main/Week07/예제실습.ipynb) | 1교시 기초: 리스트·딕셔너리·튜플·세트, enumerate, 함수, TF-IDF, Gradio echo | 불필요 |
 
 ## 실습 데이터
 노트북 0번 셀이 아래 순서로 자동 준비합니다. 학생이 직접 내려받을 필요가 없습니다.
