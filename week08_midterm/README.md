@@ -1,5 +1,7 @@
 # 8주차 중간고사 — 사전학습 모델로 내 사진 분류하기
 
+**실습 주제: 사전학습 인공지능 모델(MobileNetV2)을 활용한 이미지 분류 실습**
+
 - [학생용 Colab 노트북](./Week08_midterm_student.ipynb)
 - [Google Colab에서 열기](https://colab.research.google.com/github/itlects/2026-1_ai-convergence-apply/blob/main/week08_midterm/Week08_midterm_student.ipynb)
 - 시험 120분, 개인 평가, 100점. ImageNet으로 사전학습된 MobileNetV2를 불러와 사용하며, 시험 중 모델을 새로 학습하지 않습니다.
