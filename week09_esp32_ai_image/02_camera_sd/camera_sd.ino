@@ -30,6 +30,7 @@
 #define PCLK_GPIO_NUM 22
 
 uint32_t imageCounter = 0;
+bool cameraAndSdReady = false;
 
 bool initCamera() {
   camera_config_t config = {};
@@ -96,13 +97,14 @@ void setup() {
     Serial.println("SD mounting failed. Check card/FAT32.");
     return;
   }
+  cameraAndSdReady = true;
   Serial.println("Ready. Send c + Enter to capture.");
 }
 
 void loop() {
   if (Serial.available()) {
     char ch = Serial.read();
-    if (ch == 'c' || ch == 'C') {
+    if (cameraAndSdReady && (ch == 'c' || ch == 'C')) {
       captureToSd();
     }
   }
