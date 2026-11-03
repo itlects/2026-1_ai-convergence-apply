@@ -1,0 +1,4 @@
+opencv-python>=4.5.1.48,<5
+pyserial>=3.5
+edge_impulse_linux>=1.2
+pytest>=7
