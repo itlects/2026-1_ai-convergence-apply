@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="750" viewBox="0 0 1280 750">
+<rect width="1280" height="750" fill="#fff"/>
+<text x="40" y="50" font-family="Arial" font-size="29" font-weight="bold">Week 11 — ESP32 DevKitC V4 wiring schematic</text>
+<rect x="75" y="120" width="360" height="520" rx="24" fill="#e8f2fb" stroke="#234" stroke-width="5"/>
+<text x="100" y="165" font-family="Arial" font-size="25">ESP32-DevKitC V4</text>
+<text x="115" y="200" font-family="Arial" font-size="17">USB Micro-B — PC</text>
+<g font-family="Arial" font-size="21" fill="#17212b">
+<text x="110" y="264">GPIO18 / J3</text><text x="110" y="354">GPIO19 / J3</text><text x="110" y="444">GPIO21 / J3</text><text x="110" y="534">GPIO23 / J3</text><text x="110" y="624">GPIO25 / J2</text>
+</g>
+<path d="M435 250 H665" stroke="#15803d" stroke-width="5"/>
+<path d="M435 340 H665" stroke="#b58e00" stroke-width="5"/>
+<path d="M435 430 H665" stroke="#be3030" stroke-width="5"/>
+<path d="M435 520 H665" stroke="#2159be" stroke-width="5"/>
+<path d="M435 610 H665" stroke="#8e3aba" stroke-width="5"/>
+<g font-family="Arial" font-size="21" fill="#222">
+<rect x="680" y="220" width="505" height="60" rx="9" stroke="#15803d" fill="none" stroke-width="3"/>
+<text x="702" y="257">220Ω → GREEN LED (+), LED(-) → GND</text>
+<rect x="680" y="310" width="505" height="60" rx="9" stroke="#b58e00" fill="none" stroke-width="3"/>
+<text x="702" y="347">220Ω → YELLOW LED (+), LED(-) → GND</text>
+<rect x="680" y="400" width="505" height="60" rx="9" stroke="#be3030" fill="none" stroke-width="3"/>
+<text x="702" y="437">220Ω → RED LED (+), LED(-) → GND</text>
+<rect x="680" y="490" width="505" height="60" rx="9" stroke="#2159be" fill="none" stroke-width="3"/>
+<text x="702" y="527">BUTTON → GND (INPUT_PULLUP)</text>
+<rect x="680" y="580" width="505" height="60" rx="9" stroke="#8e3aba" fill="none" stroke-width="3"/>
+<text x="702" y="617">PASSIVE PIEZO (+), (-) → GND</text>
+<text x="60" y="697" font-size="18">All grounds connect to board GND. Remove USB power before wiring. ESP32 GPIO is 3.3V only.</text>
+</g>
+</svg>
