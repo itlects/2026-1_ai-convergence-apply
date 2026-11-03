@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="780" viewBox="0 0 1200 780">
+<rect width="1200" height="780" fill="#f6f8fb"/><text x="35" y="52" font-family="sans-serif" font-size="32" font-weight="bold">Week09 - ESP32-DevKitC V4 GPIO wiring</text>
+<text x="35" y="82" font-family="sans-serif" font-size="18">All ground points share GND. USB power disconnected when wiring. GPIO logic 3.3 V.</text>
+<rect x="70" y="155" width="310" height="535" rx="20" fill="#1c4568"/><text x="95" y="198" font-family="sans-serif" font-size="25" fill="white">ESP32-DevKitC V4</text>
+<text x="96" y="226" font-family="sans-serif" font-size="18" fill="white">GPIO label = module pin number</text>
+<g font-family="sans-serif" font-size="18" fill="white"><text x="108" y="278">16  17  18  19</text><text x="108" y="416">13  14  25  26</text><text x="108" y="550">27</text><text x="108" y="648">GND</text></g>
+<g stroke="#236cb9" stroke-width="4" fill="none"><path d="M380 271 H460"/><path d="M380 291 H460"/><path d="M380 311 H460"/><path d="M380 331 H460"/></g>
+<g font-family="sans-serif" font-size="18" fill="#17212d"><text x="470" y="276">GPIO 16 → 330Ω → LED1 anode → GND</text><text x="470" y="302">GPIO 17 → 330Ω → LED2 anode → GND</text><text x="470" y="328">GPIO 18 → 330Ω → LED3 anode → GND</text><text x="470" y="354">GPIO 19 → 330Ω → LED4 anode → GND</text></g>
+<g stroke="#e68c23" stroke-width="4" fill="none"><path d="M380 409 H460"/><path d="M380 429 H460"/><path d="M380 449 H460"/><path d="M380 469 H460"/></g><g font-family="sans-serif" font-size="18" fill="#17212d"><text x="470" y="413">GPIO 13 → Button1 → GND (pull-up)</text><text x="470" y="439">GPIO 14 → Button2 → GND (pull-up)</text><text x="470" y="465">GPIO 25 → Button3 → GND (pull-up)</text><text x="470" y="491">GPIO 26 → Button4 → GND (pull-up)</text></g>
+<path d="M380 546 H460" stroke="#be3e70" stroke-width="4"/><text x="470" y="551" font-family="sans-serif" font-size="18">GPIO 27 → 100Ω → low-current passive piezo (+)</text><text x="470" y="581" font-family="sans-serif" font-size="18">Piezo (-) → GND; magnetic buzzer requires driver</text>
+<path d="M380 642 H970" stroke="#303a40" stroke-width="5"/><text x="690" y="668" font-family="sans-serif" font-size="19">Common ground bus (all components)</text>
+<text x="70" y="735" font-family="sans-serif" font-size="16" fill="#8b2222">Diagram is a pin-level wiring guide, not a physical pin-position diagram: check silkscreen on your board.</text>
+</svg>
