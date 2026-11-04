@@ -2,7 +2,7 @@
   9주차 예제 5 (종합) — 버튼 4개 · LED 4개 · 부저 "스마트 제어 패널"
   보드 : ESP32-DevKitC V4 ("ESP32 Dev Module")
 
-  연결 요약 (그림: diagrams/09_wiring_full_devkitc.png)
+  연결 요약 (그림: diagrams/08_wiring_full_devkitc.png)
     LED1~4  : GPIO32, 33, 25, 26  ── 220Ω ── LED(+) / LED(-) ── GND
     BTN1~4  : GPIO23, 22, 21, 19  ── 버튼 ── GND   (INPUT_PULLUP)
     BUZZER  : GPIO27 ── 부저(+) / 부저(-) ── GND
