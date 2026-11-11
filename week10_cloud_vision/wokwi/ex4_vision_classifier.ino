@@ -86,6 +86,51 @@ uint8_t imageBuf[MAX_IMAGE_BYTES];
 String apiKey;
 int nextIndex = 0;
 
+// ======== Wokwi 전용: 캐시 모드 ========
+// Wokwi 가상 Wi-Fi에서는 구글 서버(vision.googleapis.com)와의 HTTPS 연결이 끊긴다(2026-11 확인).
+// 그래서 Vision을 직접 부르는 대신, 강의자가 같은 80장을 Vision으로 미리 분석해 저장한
+// vision_cache.json 에서 해당 이미지의 라벨을 읽는다. JSON 해석·매핑·정확도 계산은 실물 보드와 같다.
+// 실물 보드에서는 USE_CACHE = false 로 바꾸면 실제 Vision API를 호출한다.
+const bool USE_CACHE = true;
+const char* CACHE_URL =
+  "https://raw.githubusercontent.com/itlects/2026-1_ai-convergence-apply/"
+  "main/week10_cloud_vision/dataset/vision_cache.json";
+
+int cacheLabels(const char* path, String labels[], float scores[], int maxLabels) {
+  WiFiClientSecure client;
+  client.setInsecure();
+  HTTPClient http;
+  http.setConnectTimeout(20000);
+  http.setTimeout(20000);
+  if (!http.begin(client, CACHE_URL)) return -1;
+  int code = http.GET();
+  if (code != HTTP_CODE_OK) {
+    Serial.printf("[캐시 오류] HTTP %d - 강의자가 vision_cache.json 을 아직 올리지 않았을 수 있음\n", code);
+    http.end();
+    return -1;
+  }
+
+  JsonDocument filter;                       // 이 이미지의 라벨만 남긴다
+  filter["labels"][path] = true;
+  JsonDocument doc;
+  DeserializationError err = deserializeJson(doc, http.getStream(), DeserializationOption::Filter(filter));
+  http.end();
+  if (err) {
+    Serial.printf("[캐시 JSON 오류] %s\n", err.c_str());
+    return -1;
+  }
+
+  int n = 0;
+  for (JsonObject item : doc["labels"][path].as<JsonArray>()) {
+    if (n >= maxLabels) break;
+    labels[n] = item["description"].as<String>();
+    scores[n] = item["score"].as<float>();
+    n++;
+  }
+  return n;
+}
+// ======================================
+
 // ================= 표시(LED·부저) =================
 void showClass(int idx) {
   for (int i = 0; i < 4; i++) {
@@ -280,7 +325,8 @@ int classifyOne(int idx, bool verbose) {
 
   String labels[MAX_LABELS];
   float scores[MAX_LABELS];
-  int n = callVision(imageBuf, len, labels, scores, MAX_LABELS);
+  int n = USE_CACHE ? cacheLabels(s.path, labels, scores, MAX_LABELS)
+                    : callVision(imageBuf, len, labels, scores, MAX_LABELS);
   if (n < 0) return -1;
 
   float bestScore;
@@ -371,7 +417,11 @@ void setup() {
   Serial.println();
   Serial.println("=== 10주차 예제4: Vision 라벨 → 과일 4종 분류기 ===");
   connectWiFi();
-  askApiKey();
+  if (USE_CACHE) {
+    Serial.println("[Wokwi 캐시 모드] vision_cache.json 사용 (API 키 입력 없음)");
+  } else {
+    askApiKey();
+  }
   Serial.println("BTN1(GPIO23)=시험 이미지 1장 분류, BTN2(GPIO22)=시험 데이터 12장 전체 평가");
 }
 
