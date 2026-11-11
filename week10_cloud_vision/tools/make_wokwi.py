@@ -58,11 +58,13 @@ int cacheLabels(const char* path, String labels[], float scores[], int maxLabels
     return -1;
   }
 
+  String body = http.getString();            // 파일 전체를 먼저 받는다 (Wokwi 네트워크가 느려도 안전)
+  http.end();
+
   JsonDocument filter;                       // 이 이미지의 라벨만 남긴다
   filter["labels"][path] = true;
   JsonDocument doc;
-  DeserializationError err = deserializeJson(doc, http.getStream(), DeserializationOption::Filter(filter));
-  http.end();
+  DeserializationError err = deserializeJson(doc, body, DeserializationOption::Filter(filter));
   if (err) {
     Serial.printf("[캐시 JSON 오류] %s\n", err.c_str());
     return -1;
