@@ -22,3 +22,11 @@
 2. `Week10_00_Instructor_VisionCache.ipynb` 실행 → Drive `04_데이터_과일80장`에 `vision_cache.json` 업로드.
 3. 실제 Vision 결과로 워크북2의 val 규칙 선택·test 정확도 확인 (미리 보기 값과 다를 수 있음).
 4. Arduino IDE에서 ArduinoJson 7 설치 후 예제 2~4 컴파일·업로드, 강의실 Wi-Fi(2.4GHz) 또는 핫스팟 연결 확인.
+
+## Wokwi 시뮬레이터 (2026-11-11, wokwi.com 웹, 저장하지 않은 새 프로젝트)
+- `wokwi/diagram.json` 회로가 그대로 그려지고 예제1 동작(LED 순서, BTN1·BTN2) 확인.
+- 예제2: Wokwi-GUEST로 연결, GitHub raw에서 apple_02.jpg 4925 bytes / Base64 6568 글자 수신 확인 (실물 예상값과 동일).
+- 진단 스케치 결과: raw.githubusercontent.com·example.com은 TLS 연결 성공, vision.googleapis.com·www.googleapis.com·www.google.com·api.openai.com은 TLS 단계에서 끊김(-80 / -29312). 평문 TCP(80)는 구글에도 연결됨.
+  → Wokwi판 예제3·4는 `USE_CACHE = true`로 GitHub의 `dataset/vision_cache.json`을 읽도록 함.
+- 예제4(Wokwi판): 임시 브랜치에 올린 **시험용 가짜 캐시**로 BTN1(1장)·BTN2(12장, 정확도·혼동행렬)까지 끝까지 동작 확인. 캡처의 라벨·점수는 형식 예시.
+- Wokwi 주의: 버튼은 0.5초 이상 눌러야 인식(시뮬레이션 속도 3~70%), Wi-Fi 연결 10~40초, 빌드 대기열 1~2분.
