@@ -247,6 +247,18 @@ else:
         media_body=media, fields="id").execute()
     print("새로 업로드:", f["id"])
 ''', expect="none")
+b.md("""
+### (Wokwi 실습용) GitHub에도 올리기
+
+Wokwi 시뮬레이터는 구글 Vision 서버에 HTTPS로 연결하지 못해, Wokwi판 예제 3·4는 GitHub의
+`week10_cloud_vision/dataset/vision_cache.json` 을 읽는다. 아래 셀로 파일을 내려받은 뒤
+GitHub 저장소 → `week10_cloud_vision/dataset/` → **Add file › Upload files** 로 올린다.
+(Colab 노트북의 cache 모드도 Drive가 막히면 이 GitHub 파일을 사용한다.)
+""")
+b.code("t_download", '''
+from google.colab import files
+files.download("vision_cache.json")   # 브라우저로 내려받기 → GitHub dataset/ 폴더에 업로드
+''', expect="none")
 b.code("t_verify", '''
 # 학생 환경과 같은 방법(gdown 폴더 다운로드)으로 받아지는지 확인
 import shutil

@@ -286,3 +286,29 @@ s.text(60, 400, "비용: LABEL_DETECTION은 매월 처음 1,000건 무료, 이�
        15, INK, "start")
 s.save("11_api_key_setup")
 print("done")
+
+# ---------------------------------------------------------------- 12 Wokwi 따라하기
+s = Svg(1400, 560, "실물 보드가 없을 때 — Wokwi 시뮬레이터로 따라하기",
+        "wokwi.com 에서 같은 회로를 불러와 예제 1~4를 실행한다 (회로 = diagram.json, 코드 = sketch.ino)")
+st = [("1. 새 프로젝트", ["wokwi.com/projects/new/esp32", "(로그인하면 저장 가능)"], BLUE),
+      ("2. 회로 붙여넣기", ["diagram.json 탭 전체 지우고", "강의 diagram.json 붙여넣기"], GREEN),
+      ("3. 라이브러리", ["Library Manager → +", "ArduinoJson 추가 (예제3·4)"], ORANGE),
+      ("4. 코드 붙여넣기", ["sketch.ino 탭에", "wokwi/exN_*.ino 붙여넣기"], PURPLE),
+      ("5. ▶ 실행", ["빌드 대기 1~2분", "버튼은 0.5초 이상 꾹"], RED)]
+for i, (h, b, c) in enumerate(st):
+    x = 30 + i * 272
+    s.box(x, 110, 250, 150, c, h, b)
+    if i < 4:
+        s.arrow(x + 252, 185, x + 270, 185)
+s.rect(30, 290, 1340, 240, "#fafbfc", LINE)
+s.text(60, 325, "실물 보드와 다른 점", 16, INK, "start", True)
+rows = [("Wi-Fi", "SSID \"Wokwi-GUEST\", 비밀번호 없음, 채널 6 → Wokwi용 코드에 이미 설정됨"),
+        ("인터넷", "GitHub 이미지 다운로드(예제2)는 가능 / 구글 Vision 서버와의 HTTPS는 끊김(2026-11 확인)"),
+        ("Vision", "예제3·4 Wokwi판은 강의자가 저장한 vision_cache.json을 읽어 같은 매핑·정확도 계산 (API 키 불필요)"),
+        ("속도", "시뮬레이션이 실제보다 느림(3~70%) → 버튼은 0.5초 이상 누르고, 결과를 기다린다"),
+        ("소리", "부저 소리는 브라우저에서 재생 (PC 음소거 해제)")]
+for i, (a, b) in enumerate(rows):
+    s.text(60, 362 + i * 34, a, 15, BLUE, "start", True)
+    s.text(150, 362 + i * 34, b, 15, INK, "start")
+s.save("12_wokwi_steps")
+print("done12")

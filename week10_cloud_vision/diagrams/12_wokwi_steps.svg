@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="560" viewBox="0 0 1400 560" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif">
+<rect width="1400" height="560" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1d2433"/></marker></defs>
+<text x="30" y="44" font-size="26" fill="#1d2433" xml:space="preserve" text-anchor="start" font-weight="bold">실물 보드가 없을 때 — Wokwi 시뮬레이터로 따라하기</text>
+<text x="30" y="72" font-size="15" fill="#5b6475" xml:space="preserve" text-anchor="start" font-weight="normal">wokwi.com 에서 같은 회로를 불러와 예제 1~4를 실행한다 (회로 = diagram.json, 코드 = sketch.ino)</text>
+<rect x="30" y="110" width="250" height="150" rx="10" fill="#e8f0fc" stroke="#2f6fd6" stroke-width="2"/>
+<text x="155.0" y="138" font-size="16" fill="#2f6fd6" xml:space="preserve" text-anchor="middle" font-weight="bold">1. 새 프로젝트</text>
+<text x="155.0" y="164" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">wokwi.com/projects/new/esp32</text>
+<text x="155.0" y="186" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">(로그인하면 저장 가능)</text>
+<line x1="282" y1="185" x2="300" y2="185" stroke="#1d2433" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="302" y="110" width="250" height="150" rx="10" fill="#e6f5ec" stroke="#2e9e5b" stroke-width="2"/>
+<text x="427.0" y="138" font-size="16" fill="#2e9e5b" xml:space="preserve" text-anchor="middle" font-weight="bold">2. 회로 붙여넣기</text>
+<text x="427.0" y="164" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">diagram.json 탭 전체 지우고</text>
+<text x="427.0" y="186" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">강의 diagram.json 붙여넣기</text>
+<line x1="554" y1="185" x2="572" y2="185" stroke="#1d2433" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="574" y="110" width="250" height="150" rx="10" fill="#fdf1e2" stroke="#e08a1e" stroke-width="2"/>
+<text x="699.0" y="138" font-size="16" fill="#e08a1e" xml:space="preserve" text-anchor="middle" font-weight="bold">3. 라이브러리</text>
+<text x="699.0" y="164" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">Library Manager → +</text>
+<text x="699.0" y="186" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">ArduinoJson 추가 (예제3·4)</text>
+<line x1="826" y1="185" x2="844" y2="185" stroke="#1d2433" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="846" y="110" width="250" height="150" rx="10" fill="#f1ebfb" stroke="#7b4fc9" stroke-width="2"/>
+<text x="971.0" y="138" font-size="16" fill="#7b4fc9" xml:space="preserve" text-anchor="middle" font-weight="bold">4. 코드 붙여넣기</text>
+<text x="971.0" y="164" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">sketch.ino 탭에</text>
+<text x="971.0" y="186" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">wokwi/exN_*.ino 붙여넣기</text>
+<line x1="1098" y1="185" x2="1116" y2="185" stroke="#1d2433" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="1118" y="110" width="250" height="150" rx="10" fill="#fbe9e9" stroke="#d64545" stroke-width="2"/>
+<text x="1243.0" y="138" font-size="16" fill="#d64545" xml:space="preserve" text-anchor="middle" font-weight="bold">5. ▶ 실행</text>
+<text x="1243.0" y="164" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">빌드 대기 1~2분</text>
+<text x="1243.0" y="186" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">버튼은 0.5초 이상 꾹</text>
+<rect x="30" y="290" width="1340" height="240" rx="10" fill="#fafbfc" stroke="#9aa3b2" stroke-width="1.5"/>
+<text x="60" y="325" font-size="16" fill="#1d2433" xml:space="preserve" text-anchor="start" font-weight="bold">실물 보드와 다른 점</text>
+<text x="60" y="362" font-size="15" fill="#2f6fd6" xml:space="preserve" text-anchor="start" font-weight="bold">Wi-Fi</text>
+<text x="150" y="362" font-size="15" fill="#1d2433" xml:space="preserve" text-anchor="start" font-weight="normal">SSID "Wokwi-GUEST", 비밀번호 없음, 채널 6 → Wokwi용 코드에 이미 설정됨</text>
+<text x="60" y="396" font-size="15" fill="#2f6fd6" xml:space="preserve" text-anchor="start" font-weight="bold">인터넷</text>
+<text x="150" y="396" font-size="15" fill="#1d2433" xml:space="preserve" text-anchor="start" font-weight="normal">GitHub 이미지 다운로드(예제2)는 가능 / 구글 Vision 서버와의 HTTPS는 끊김(2026-11 확인)</text>
+<text x="60" y="430" font-size="15" fill="#2f6fd6" xml:space="preserve" text-anchor="start" font-weight="bold">Vision</text>
+<text x="150" y="430" font-size="15" fill="#1d2433" xml:space="preserve" text-anchor="start" font-weight="normal">예제3·4 Wokwi판은 강의자가 저장한 vision_cache.json을 읽어 같은 매핑·정확도 계산 (API 키 불필요)</text>
+<text x="60" y="464" font-size="15" fill="#2f6fd6" xml:space="preserve" text-anchor="start" font-weight="bold">속도</text>
+<text x="150" y="464" font-size="15" fill="#1d2433" xml:space="preserve" text-anchor="start" font-weight="normal">시뮬레이션이 실제보다 느림(3~70%) → 버튼은 0.5초 이상 누르고, 결과를 기다린다</text>
+<text x="60" y="498" font-size="15" fill="#2f6fd6" xml:space="preserve" text-anchor="start" font-weight="bold">소리</text>
+<text x="150" y="498" font-size="15" fill="#1d2433" xml:space="preserve" text-anchor="start" font-weight="normal">부저 소리는 브라우저에서 재생 (PC 음소거 해제)</text>
+</svg>
