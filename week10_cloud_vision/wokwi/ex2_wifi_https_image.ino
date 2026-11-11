@@ -54,13 +54,13 @@ int imageIndex = 0;
 void connectWiFi() {
   Serial.printf("Wi-Fi 연결 중: %s ", WIFI_SSID);
   WiFi.mode(WIFI_STA);
-  WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
+  WiFi.begin(WIFI_SSID, WIFI_PASSWORD, 6);   // Wokwi-GUEST는 6번 채널 (연결이 빨라짐)
 
   unsigned long start = millis();
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
     Serial.print(".");
-    if (millis() - start > 20000) {
+    if (millis() - start > 40000) {
       Serial.println("\n[실패] 20초 안에 연결되지 않음 → SSID/비밀번호, 2.4GHz 여부 확인");
       return;
     }

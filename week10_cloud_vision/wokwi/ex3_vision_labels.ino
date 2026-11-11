@@ -64,9 +64,9 @@ int imageIndex = 0;
 void connectWiFi() {
   Serial.printf("Wi-Fi 연결 중: %s ", WIFI_SSID);
   WiFi.mode(WIFI_STA);
-  WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
+  WiFi.begin(WIFI_SSID, WIFI_PASSWORD, 6);   // Wokwi-GUEST는 6번 채널 (연결이 빨라짐)
   unsigned long start = millis();
-  while (WiFi.status() != WL_CONNECTED && millis() - start < 20000) {
+  while (WiFi.status() != WL_CONNECTED && millis() - start < 40000) {
     delay(500);
     Serial.print(".");
   }

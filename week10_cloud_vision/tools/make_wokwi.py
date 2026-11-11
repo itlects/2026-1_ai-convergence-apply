@@ -87,6 +87,12 @@ for ex in ["ex1_circuit_check", "ex2_wifi_https_image", "ex3_vision_labels", "ex
         src = src.replace('const char* WIFI_PASSWORD = "YOUR_WIFI_PASSWORD";', 'const char* WIFI_PASSWORD = "";')
         assert "Wokwi-GUEST" in src
         src = NOTE + src
+        n = src.count("WiFi.begin(WIFI_SSID, WIFI_PASSWORD);")
+        assert n == 1, ex
+        src = src.replace("WiFi.begin(WIFI_SSID, WIFI_PASSWORD);",
+                          "WiFi.begin(WIFI_SSID, WIFI_PASSWORD, 6);   // Wokwi-GUEST는 6번 채널 (연결이 빨라짐)")
+        src = src.replace("millis() - start > 20000", "millis() - start > 40000")
+        src = src.replace("millis() - start < 20000", "millis() - start < 40000")
     if ex in ("ex3_vision_labels", "ex4_vision_classifier"):
         anchor = "// ---------------- ①" if ex == "ex3_vision_labels" else "// ================= 표시(LED·부저)"
         assert anchor in src, ex
