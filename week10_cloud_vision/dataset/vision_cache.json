@@ -1,0 +1,1658 @@
+{
+ "meta": {
+  "created": "MOCK-FOR-TEST",
+  "feature": "LABEL_DETECTION",
+  "maxResults": 10,
+  "images": 80
+ },
+ "labels": {
+  "images/apple/apple_01.jpg": [
+   {
+    "description": "Fruit",
+    "score": 0.976
+   },
+   {
+    "description": "Apple",
+    "score": 0.9382
+   },
+   {
+    "description": "Natural foods",
+    "score": 0.8779
+   },
+   {
+    "description": "Plant",
+    "score": 0.766
+   },
+   {
+    "description": "Mcintosh",
+    "score": 0.7633
+   }
+  ],
+  "images/apple/apple_02.jpg": [
+   {
+    "description": "Apple",
+    "score": 0.9405
+   },
+   {
+    "description": "Fruit",
+    "score": 0.9364
+   },
+   {
+    "description": "Natural foods",
+    "score": 0.8673
+   },
+   {
+    "description": "Mcintosh",
+    "score": 0.7829
+   },
+   {
+    "description": "Plant",
+    "score": 0.7725
+   }
+  ],
+  "images/apple/apple_03.jpg": [
+   {
+    "description": "Fruit",
+    "score": 0.9817
+   },
+   {
+    "description": "Apple",
+    "score": 0.9154
+   },
+   {
+    "description": "Natural foods",
+    "score": 0.8654
+   },
+   {
+    "description": "Mcintosh",
+    "score": 0.808
+   },
+   {
+    "description": "Plant",
+    "score": 0.7757
+   }
+  ],
+  "images/apple/apple_04.jpg": [
+   {
+    "description": "Fruit",
+    "score": 0.95
+   },
+   {
+    "description": "Red",
+    "score": 0.81
+   },
+   {
+    "description": "Natural foods",
+    "score": 0.8
+   }
+  ],
+  "images/apple/apple_05.jpg": [
+   {
+    "description": "Apple",
+    "score": 0.9357
+   },
+   {
+    "description": "Fruit",
+    "score": 0.9279
+   },
+   {
+    "description": "Natural foods",
+    "score": 0.9209
+   },
+   {
+    "description": "Mcintosh",
+    "score": 0.8016
+   },
+   {
+    "description": "Plant",
+    "score": 0.7625
+   }
+  ],
+  "images/apple/apple_06.jpg": [
+   {
+    "description": "Apple",
+    "score": 0.9091
+   },
+   {
+    "description": "Fruit",
+    "score": 0.9091
+   },
+   {
+    "description": "Natural foods",
+    "score": 0.895
+   },
+   {
+    "description": "Mcintosh",
+    "score": 0.8222
+   },
+   {
+    "description": "Plant",
+    "score": 0.807
+   }
+  ],
+  "images/apple/apple_07.jpg": [
+   {
+    "description": "Apple",
+    "score": 0.9479
+   },
+   {
+    "description": "Fruit",
+    "score": 0.9429
+   },
+   {
+    "description": "Natural foods",
+    "score": 0.8634
+   },
+   {
+    "description": "Mcintosh",
+    "score": 0.8125
+   },
+   {
+    "description": "Plant",
+    "score": 0.7694
+   }
+  ],
+  "images/apple/apple_08.jpg": [
+   {
+    "description": "Apple",
+    "score": 0.9348
+   },
+   {
+    "description": "Fruit",
+    "score": 0.9013
+   },
+   {
+    "description": "Natural foods",
+    "score": 0.8759
+   },
+   {
+    "description": "Mcintosh",
+    "score": 0.8142
+   },
+   {
+    "description": "Plant",
+    "score": 0.7801
+   }
+  ],
+  "images/apple/apple_09.jpg": [
+   {
+    "description": "Natural foods",
+    "score": 0.9181
+   },
+   {
+    "description": "Apple",
+    "score": 0.9144
+   },
+   {
+    "description": "Fruit",
+    "score": 0.9001
+   },
+   {
+    "description": "Mcintosh",
+    "score": 0.762
+   },
+   {
+    "description": "Plant",
+    "score": 0.7493
+   }
+  ],
+  "images/apple/apple_10.jpg": [
+   {
+    "description": "Fruit",
+    "score": 0.9783
+   },
+   {
+    "description": "Natural foods",
+    "score": 0.8911
+   },
+   {
+    "description": "Apple",
+    "score": 0.8872
+   },
+   {
+    "description": "Plant",
+    "score": 0.8071
+   },
+   {
+    "description": "Mcintosh",
+    "score": 0.7615
+   }
+  ],
+  "images/apple/apple_11.jpg": [
+   {
+    "description": "Fruit",
+    "score": 0.95
+   },
+   {
+    "description": "Red",
+    "score": 0.81
+   },
+   {
+    "description": "Natural foods",
+    "score": 0.8
+   }
+  ],
+  "images/apple/apple_12.jpg": [
+   {
+    "description": "Fruit",
+    "score": 0.984
+   },
+   {
+    "description": "Natural foods",
+    "score": 0.8896
+   },
+   {
+    "description": "Apple",
+    "score": 0.8798
+   },
+   {
+    "description": "Mcintosh",
+    "score": 0.8036
+   },
+   {
+    "description": "Plant",
+    "score": 0.7693
+   }
+  ],
+  "images/apple/apple_13.jpg": [
+   {
+    "description": "Fruit",
+    "score": 0.9733
+   },
+   {
+    "description": "Natural foods",
+    "score": 0.9267
+   },
+   {
+    "description": "Apple",
+    "score": 0.9186
+   },
+   {
+    "description": "Mcintosh",
+    "score": 0.7943
+   },
+   {
+    "description": "Plant",
+    "score": 0.7729
+   }
+  ],
+  "images/apple/apple_14.jpg": [
+   {
+    "description": "Fruit",
+    "score": 0.94
+   },
+   {
+    "description": "Apple",
+    "score": 0.9237
+   },
+   {
+    "description": "Natural foods",
+    "score": 0.8746
+   },
+   {
+    "description": "Mcintosh",
+    "score": 0.7918
+   },
+   {
+    "description": "Plant",
+    "score": 0.7461
+   }
+  ],
+  "images/apple/apple_15.jpg": [
+   {
+    "description": "Fruit",
+    "score": 0.917
+   },
+   {
+    "description": "Natural foods",
+    "score": 0.8951
+   },
+   {
+    "description": "Apple",
+    "score": 0.8868
+   },
+   {
+    "description": "Mcintosh",
+    "score": 0.7991
+   },
+   {
+    "description": "Plant",
+    "score": 0.7629
+   }
+  ],
+  "images/apple/apple_16.jpg": [
+   {
+    "description": "Apple",
+    "score": 0.9382
+   },
+   {
+    "description": "Natural foods",
+    "score": 0.9189
+   },
+   {
+    "description": "Fruit",
+    "score": 0.9081
+   },
+   {
+    "description": "Mcintosh",
+    "score": 0.8231
+   },
+   {
+    "description": "Plant",
+    "score": 0.7958
+   }
+  ],
+  "images/apple/apple_17.jpg": [
+   {
+    "description": "Fruit",
+    "score": 0.9808
+   },
+   {
+    "description": "Apple",
+    "score": 0.9531
+   },
+   {
+    "description": "Natural foods",
+    "score": 0.8887
+   },
+   {
+    "description": "Plant",
+    "score": 0.7835
+   },
+   {
+    "description": "Mcintosh",
+    "score": 0.7752
+   }
+  ],
+  "images/apple/apple_18.jpg": [
+   {
+    "description": "Apple",
+    "score": 0.943
+   },
+   {
+    "description": "Fruit",
+    "score": 0.9248
+   },
+   {
+    "description": "Natural foods",
+    "score": 0.9165
+   },
+   {
+    "description": "Mcintosh",
+    "score": 0.8206
+   },
+   {
+    "description": "Plant",
+    "score": 0.7731
+   }
+  ],
+  "images/apple/apple_19.jpg": [
+   {
+    "description": "Fruit",
+    "score": 0.9855
+   },
+   {
+    "description": "Apple",
+    "score": 0.9222
+   },
+   {
+    "description": "Natural foods",
+    "score": 0.8806
+   },
+   {
+    "description": "Plant",
+    "score": 0.8097
+   },
+   {
+    "description": "Mcintosh",
+    "score": 0.7994
+   }
+  ],
+  "images/apple/apple_20.jpg": [
+   {
+    "description": "Fruit",
+    "score": 0.9825
+   },
+   {
+    "description": "Apple",
+    "score": 0.9414
+   },
+   {
+    "description": "Natural foods",
+    "score": 0.8474
+   },
+   {
+    "description": "Mcintosh",
+    "score": 0.7952
+   },
+   {
+    "description": "Plant",
+    "score": 0.7638
+   }
+  ],
+  "images/banana/banana_01.jpg": [
+   {
+    "description": "Banana",
+    "score": 0.9667
+   },
+   {
+    "description": "Cooking plantain",
+    "score": 0.8361
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7958
+   },
+   {
+    "description": "Saba banana",
+    "score": 0.7619
+   }
+  ],
+  "images/banana/banana_02.jpg": [
+   {
+    "description": "Banana",
+    "score": 0.9205
+   },
+   {
+    "description": "Saba banana",
+    "score": 0.8115
+   },
+   {
+    "description": "Cooking plantain",
+    "score": 0.7798
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7599
+   }
+  ],
+  "images/banana/banana_03.jpg": [
+   {
+    "description": "Banana",
+    "score": 0.9834
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7928
+   },
+   {
+    "description": "Cooking plantain",
+    "score": 0.7691
+   },
+   {
+    "description": "Saba banana",
+    "score": 0.7532
+   }
+  ],
+  "images/banana/banana_04.jpg": [
+   {
+    "description": "Banana",
+    "score": 0.9141
+   },
+   {
+    "description": "Saba banana",
+    "score": 0.8219
+   },
+   {
+    "description": "Cooking plantain",
+    "score": 0.8116
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7781
+   }
+  ],
+  "images/banana/banana_05.jpg": [
+   {
+    "description": "Banana",
+    "score": 0.9713
+   },
+   {
+    "description": "Saba banana",
+    "score": 0.7971
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7846
+   },
+   {
+    "description": "Cooking plantain",
+    "score": 0.7624
+   }
+  ],
+  "images/banana/banana_06.jpg": [
+   {
+    "description": "Banana",
+    "score": 0.9618
+   },
+   {
+    "description": "Fruit",
+    "score": 0.8182
+   },
+   {
+    "description": "Cooking plantain",
+    "score": 0.7952
+   },
+   {
+    "description": "Saba banana",
+    "score": 0.7733
+   }
+  ],
+  "images/banana/banana_07.jpg": [
+   {
+    "description": "Banana",
+    "score": 0.9133
+   },
+   {
+    "description": "Saba banana",
+    "score": 0.8265
+   },
+   {
+    "description": "Cooking plantain",
+    "score": 0.7619
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7466
+   }
+  ],
+  "images/banana/banana_08.jpg": [
+   {
+    "description": "Banana",
+    "score": 0.9212
+   },
+   {
+    "description": "Fruit",
+    "score": 0.8143
+   },
+   {
+    "description": "Saba banana",
+    "score": 0.8121
+   },
+   {
+    "description": "Cooking plantain",
+    "score": 0.779
+   }
+  ],
+  "images/banana/banana_09.jpg": [
+   {
+    "description": "Banana",
+    "score": 0.9121
+   },
+   {
+    "description": "Cooking plantain",
+    "score": 0.7983
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7534
+   },
+   {
+    "description": "Saba banana",
+    "score": 0.7491
+   }
+  ],
+  "images/banana/banana_10.jpg": [
+   {
+    "description": "Banana",
+    "score": 0.9299
+   },
+   {
+    "description": "Cooking plantain",
+    "score": 0.8182
+   },
+   {
+    "description": "Saba banana",
+    "score": 0.7715
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7462
+   }
+  ],
+  "images/banana/banana_11.jpg": [
+   {
+    "description": "Banana",
+    "score": 0.9553
+   },
+   {
+    "description": "Fruit",
+    "score": 0.8189
+   },
+   {
+    "description": "Cooking plantain",
+    "score": 0.7635
+   },
+   {
+    "description": "Saba banana",
+    "score": 0.7491
+   }
+  ],
+  "images/banana/banana_12.jpg": [
+   {
+    "description": "Banana",
+    "score": 0.9279
+   },
+   {
+    "description": "Saba banana",
+    "score": 0.8058
+   },
+   {
+    "description": "Fruit",
+    "score": 0.8054
+   },
+   {
+    "description": "Cooking plantain",
+    "score": 0.7923
+   }
+  ],
+  "images/banana/banana_13.jpg": [
+   {
+    "description": "Banana",
+    "score": 0.99
+   },
+   {
+    "description": "Fruit",
+    "score": 0.817
+   },
+   {
+    "description": "Saba banana",
+    "score": 0.8005
+   },
+   {
+    "description": "Cooking plantain",
+    "score": 0.7752
+   }
+  ],
+  "images/banana/banana_14.jpg": [
+   {
+    "description": "Banana",
+    "score": 0.9152
+   },
+   {
+    "description": "Cooking plantain",
+    "score": 0.8209
+   },
+   {
+    "description": "Saba banana",
+    "score": 0.8161
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7608
+   }
+  ],
+  "images/banana/banana_15.jpg": [
+   {
+    "description": "Banana",
+    "score": 0.9326
+   },
+   {
+    "description": "Cooking plantain",
+    "score": 0.8137
+   },
+   {
+    "description": "Saba banana",
+    "score": 0.7798
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7457
+   }
+  ],
+  "images/banana/banana_16.jpg": [
+   {
+    "description": "Banana",
+    "score": 0.9524
+   },
+   {
+    "description": "Cooking plantain",
+    "score": 0.7969
+   },
+   {
+    "description": "Saba banana",
+    "score": 0.7912
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7758
+   }
+  ],
+  "images/banana/banana_17.jpg": [
+   {
+    "description": "Banana",
+    "score": 0.938
+   },
+   {
+    "description": "Saba banana",
+    "score": 0.8154
+   },
+   {
+    "description": "Cooking plantain",
+    "score": 0.7921
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7526
+   }
+  ],
+  "images/banana/banana_18.jpg": [
+   {
+    "description": "Banana",
+    "score": 0.9605
+   },
+   {
+    "description": "Saba banana",
+    "score": 0.8067
+   },
+   {
+    "description": "Cooking plantain",
+    "score": 0.7611
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7602
+   }
+  ],
+  "images/banana/banana_19.jpg": [
+   {
+    "description": "Banana",
+    "score": 0.9141
+   },
+   {
+    "description": "Fruit",
+    "score": 0.8158
+   },
+   {
+    "description": "Cooking plantain",
+    "score": 0.7853
+   },
+   {
+    "description": "Saba banana",
+    "score": 0.7616
+   }
+  ],
+  "images/banana/banana_20.jpg": [
+   {
+    "description": "Banana",
+    "score": 0.9417
+   },
+   {
+    "description": "Fruit",
+    "score": 0.8152
+   },
+   {
+    "description": "Cooking plantain",
+    "score": 0.7859
+   },
+   {
+    "description": "Saba banana",
+    "score": 0.7723
+   }
+  ],
+  "images/orange/orange_01.jpg": [
+   {
+    "description": "Citrus",
+    "score": 0.937
+   },
+   {
+    "description": "Orange",
+    "score": 0.9059
+   },
+   {
+    "description": "Mandarin orange",
+    "score": 0.8844
+   },
+   {
+    "description": "Tangerine",
+    "score": 0.7949
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7773
+   }
+  ],
+  "images/orange/orange_02.jpg": [
+   {
+    "description": "Citrus",
+    "score": 0.9386
+   },
+   {
+    "description": "Orange",
+    "score": 0.8501
+   },
+   {
+    "description": "Mandarin orange",
+    "score": 0.8373
+   },
+   {
+    "description": "Tangerine",
+    "score": 0.7901
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7615
+   }
+  ],
+  "images/orange/orange_03.jpg": [
+   {
+    "description": "Citrus",
+    "score": 0.9374
+   },
+   {
+    "description": "Mandarin orange",
+    "score": 0.8988
+   },
+   {
+    "description": "Orange",
+    "score": 0.8841
+   },
+   {
+    "description": "Tangerine",
+    "score": 0.8111
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7773
+   }
+  ],
+  "images/orange/orange_04.jpg": [
+   {
+    "description": "Citrus",
+    "score": 0.9162
+   },
+   {
+    "description": "Orange",
+    "score": 0.9132
+   },
+   {
+    "description": "Mandarin orange",
+    "score": 0.8576
+   },
+   {
+    "description": "Tangerine",
+    "score": 0.8196
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7442
+   }
+  ],
+  "images/orange/orange_05.jpg": [
+   {
+    "description": "Citrus",
+    "score": 0.9201
+   },
+   {
+    "description": "Orange",
+    "score": 0.8733
+   },
+   {
+    "description": "Mandarin orange",
+    "score": 0.8342
+   },
+   {
+    "description": "Tangerine",
+    "score": 0.8075
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7839
+   }
+  ],
+  "images/orange/orange_06.jpg": [
+   {
+    "description": "Citrus",
+    "score": 0.9305
+   },
+   {
+    "description": "Orange",
+    "score": 0.918
+   },
+   {
+    "description": "Mandarin orange",
+    "score": 0.8995
+   },
+   {
+    "description": "Tangerine",
+    "score": 0.8045
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7681
+   }
+  ],
+  "images/orange/orange_07.jpg": [
+   {
+    "description": "Orange",
+    "score": 0.9228
+   },
+   {
+    "description": "Citrus",
+    "score": 0.922
+   },
+   {
+    "description": "Mandarin orange",
+    "score": 0.8988
+   },
+   {
+    "description": "Tangerine",
+    "score": 0.8331
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7569
+   }
+  ],
+  "images/orange/orange_08.jpg": [
+   {
+    "description": "Citrus",
+    "score": 0.9699
+   },
+   {
+    "description": "Orange",
+    "score": 0.907
+   },
+   {
+    "description": "Fruit",
+    "score": 0.8288
+   },
+   {
+    "description": "Mandarin orange",
+    "score": 0.8275
+   },
+   {
+    "description": "Tangerine",
+    "score": 0.8253
+   }
+  ],
+  "images/orange/orange_09.jpg": [
+   {
+    "description": "Citrus",
+    "score": 0.9162
+   },
+   {
+    "description": "Orange",
+    "score": 0.9111
+   },
+   {
+    "description": "Mandarin orange",
+    "score": 0.8485
+   },
+   {
+    "description": "Fruit",
+    "score": 0.8046
+   },
+   {
+    "description": "Tangerine",
+    "score": 0.7792
+   }
+  ],
+  "images/orange/orange_10.jpg": [
+   {
+    "description": "Orange",
+    "score": 0.924
+   },
+   {
+    "description": "Citrus",
+    "score": 0.8802
+   },
+   {
+    "description": "Mandarin orange",
+    "score": 0.8676
+   },
+   {
+    "description": "Tangerine",
+    "score": 0.7688
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7507
+   }
+  ],
+  "images/orange/orange_11.jpg": [
+   {
+    "description": "Citrus",
+    "score": 0.9384
+   },
+   {
+    "description": "Orange",
+    "score": 0.9286
+   },
+   {
+    "description": "Tangerine",
+    "score": 0.8481
+   },
+   {
+    "description": "Mandarin orange",
+    "score": 0.8452
+   },
+   {
+    "description": "Fruit",
+    "score": 0.749
+   }
+  ],
+  "images/orange/orange_12.jpg": [
+   {
+    "description": "Citrus",
+    "score": 0.9569
+   },
+   {
+    "description": "Orange",
+    "score": 0.8857
+   },
+   {
+    "description": "Mandarin orange",
+    "score": 0.8273
+   },
+   {
+    "description": "Tangerine",
+    "score": 0.7847
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7808
+   }
+  ],
+  "images/orange/orange_13.jpg": [
+   {
+    "description": "Citrus",
+    "score": 0.9513
+   },
+   {
+    "description": "Orange",
+    "score": 0.9275
+   },
+   {
+    "description": "Mandarin orange",
+    "score": 0.832
+   },
+   {
+    "description": "Tangerine",
+    "score": 0.8069
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7986
+   }
+  ],
+  "images/orange/orange_14.jpg": [
+   {
+    "description": "Citrus",
+    "score": 0.93
+   },
+   {
+    "description": "Fruit",
+    "score": 0.9
+   },
+   {
+    "description": "Orange",
+    "score": 0.58
+   }
+  ],
+  "images/orange/orange_15.jpg": [
+   {
+    "description": "Citrus",
+    "score": 0.9413
+   },
+   {
+    "description": "Mandarin orange",
+    "score": 0.9052
+   },
+   {
+    "description": "Orange",
+    "score": 0.9003
+   },
+   {
+    "description": "Tangerine",
+    "score": 0.8445
+   },
+   {
+    "description": "Fruit",
+    "score": 0.8219
+   }
+  ],
+  "images/orange/orange_16.jpg": [
+   {
+    "description": "Orange",
+    "score": 0.9174
+   },
+   {
+    "description": "Citrus",
+    "score": 0.8838
+   },
+   {
+    "description": "Mandarin orange",
+    "score": 0.8831
+   },
+   {
+    "description": "Tangerine",
+    "score": 0.819
+   },
+   {
+    "description": "Fruit",
+    "score": 0.8041
+   }
+  ],
+  "images/orange/orange_17.jpg": [
+   {
+    "description": "Citrus",
+    "score": 0.9612
+   },
+   {
+    "description": "Orange",
+    "score": 0.9076
+   },
+   {
+    "description": "Mandarin orange",
+    "score": 0.8535
+   },
+   {
+    "description": "Tangerine",
+    "score": 0.8084
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7587
+   }
+  ],
+  "images/orange/orange_18.jpg": [
+   {
+    "description": "Citrus",
+    "score": 0.9328
+   },
+   {
+    "description": "Orange",
+    "score": 0.8508
+   },
+   {
+    "description": "Mandarin orange",
+    "score": 0.8336
+   },
+   {
+    "description": "Fruit",
+    "score": 0.8111
+   },
+   {
+    "description": "Tangerine",
+    "score": 0.79
+   }
+  ],
+  "images/orange/orange_19.jpg": [
+   {
+    "description": "Citrus",
+    "score": 0.9447
+   },
+   {
+    "description": "Orange",
+    "score": 0.8804
+   },
+   {
+    "description": "Mandarin orange",
+    "score": 0.8758
+   },
+   {
+    "description": "Tangerine",
+    "score": 0.7637
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7547
+   }
+  ],
+  "images/orange/orange_20.jpg": [
+   {
+    "description": "Citrus",
+    "score": 0.9684
+   },
+   {
+    "description": "Orange",
+    "score": 0.8761
+   },
+   {
+    "description": "Mandarin orange",
+    "score": 0.8555
+   },
+   {
+    "description": "Tangerine",
+    "score": 0.8094
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7664
+   }
+  ],
+  "images/lemon/lemon_01.jpg": [
+   {
+    "description": "Lemon",
+    "score": 0.903
+   },
+   {
+    "description": "Citrus",
+    "score": 0.8616
+   },
+   {
+    "description": "Sweet lemon",
+    "score": 0.7843
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7571
+   },
+   {
+    "description": "Yellow",
+    "score": 0.7562
+   }
+  ],
+  "images/lemon/lemon_02.jpg": [
+   {
+    "description": "Citrus",
+    "score": 0.8763
+   },
+   {
+    "description": "Lemon",
+    "score": 0.8664
+   },
+   {
+    "description": "Sweet lemon",
+    "score": 0.8096
+   },
+   {
+    "description": "Yellow",
+    "score": 0.7773
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7189
+   }
+  ],
+  "images/lemon/lemon_03.jpg": [
+   {
+    "description": "Lemon",
+    "score": 0.9418
+   },
+   {
+    "description": "Citrus",
+    "score": 0.8827
+   },
+   {
+    "description": "Sweet lemon",
+    "score": 0.8557
+   },
+   {
+    "description": "Yellow",
+    "score": 0.8279
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7409
+   }
+  ],
+  "images/lemon/lemon_04.jpg": [
+   {
+    "description": "Lemon",
+    "score": 0.9031
+   },
+   {
+    "description": "Citrus",
+    "score": 0.903
+   },
+   {
+    "description": "Sweet lemon",
+    "score": 0.8184
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7761
+   },
+   {
+    "description": "Yellow",
+    "score": 0.7672
+   }
+  ],
+  "images/lemon/lemon_05.jpg": [
+   {
+    "description": "Lemon",
+    "score": 0.9405
+   },
+   {
+    "description": "Citrus",
+    "score": 0.9228
+   },
+   {
+    "description": "Sweet lemon",
+    "score": 0.8364
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7977
+   },
+   {
+    "description": "Yellow",
+    "score": 0.7738
+   }
+  ],
+  "images/lemon/lemon_06.jpg": [
+   {
+    "description": "Lemon",
+    "score": 0.9175
+   },
+   {
+    "description": "Citrus",
+    "score": 0.8459
+   },
+   {
+    "description": "Yellow",
+    "score": 0.8075
+   },
+   {
+    "description": "Sweet lemon",
+    "score": 0.7876
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7155
+   }
+  ],
+  "images/lemon/lemon_07.jpg": [
+   {
+    "description": "Citrus",
+    "score": 0.93
+   },
+   {
+    "description": "Orange",
+    "score": 0.72
+   },
+   {
+    "description": "Yellow",
+    "score": 0.7
+   },
+   {
+    "description": "Lemon",
+    "score": 0.61
+   }
+  ],
+  "images/lemon/lemon_08.jpg": [
+   {
+    "description": "Lemon",
+    "score": 0.9126
+   },
+   {
+    "description": "Citrus",
+    "score": 0.9011
+   },
+   {
+    "description": "Sweet lemon",
+    "score": 0.8181
+   },
+   {
+    "description": "Fruit",
+    "score": 0.799
+   },
+   {
+    "description": "Yellow",
+    "score": 0.7731
+   }
+  ],
+  "images/lemon/lemon_09.jpg": [
+   {
+    "description": "Citrus",
+    "score": 0.9099
+   },
+   {
+    "description": "Lemon",
+    "score": 0.8835
+   },
+   {
+    "description": "Sweet lemon",
+    "score": 0.8188
+   },
+   {
+    "description": "Yellow",
+    "score": 0.7723
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7157
+   }
+  ],
+  "images/lemon/lemon_10.jpg": [
+   {
+    "description": "Lemon",
+    "score": 0.9377
+   },
+   {
+    "description": "Citrus",
+    "score": 0.9032
+   },
+   {
+    "description": "Sweet lemon",
+    "score": 0.8613
+   },
+   {
+    "description": "Yellow",
+    "score": 0.7806
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7709
+   }
+  ],
+  "images/lemon/lemon_11.jpg": [
+   {
+    "description": "Citrus",
+    "score": 0.8758
+   },
+   {
+    "description": "Lemon",
+    "score": 0.8707
+   },
+   {
+    "description": "Sweet lemon",
+    "score": 0.7987
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7953
+   },
+   {
+    "description": "Yellow",
+    "score": 0.7438
+   }
+  ],
+  "images/lemon/lemon_12.jpg": [
+   {
+    "description": "Citrus",
+    "score": 0.93
+   },
+   {
+    "description": "Orange",
+    "score": 0.72
+   },
+   {
+    "description": "Yellow",
+    "score": 0.7
+   },
+   {
+    "description": "Lemon",
+    "score": 0.61
+   }
+  ],
+  "images/lemon/lemon_13.jpg": [
+   {
+    "description": "Citrus",
+    "score": 0.929
+   },
+   {
+    "description": "Lemon",
+    "score": 0.8736
+   },
+   {
+    "description": "Sweet lemon",
+    "score": 0.8685
+   },
+   {
+    "description": "Yellow",
+    "score": 0.7534
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7465
+   }
+  ],
+  "images/lemon/lemon_14.jpg": [
+   {
+    "description": "Lemon",
+    "score": 0.9212
+   },
+   {
+    "description": "Citrus",
+    "score": 0.919
+   },
+   {
+    "description": "Sweet lemon",
+    "score": 0.8246
+   },
+   {
+    "description": "Yellow",
+    "score": 0.8225
+   },
+   {
+    "description": "Fruit",
+    "score": 0.739
+   }
+  ],
+  "images/lemon/lemon_15.jpg": [
+   {
+    "description": "Lemon",
+    "score": 0.9049
+   },
+   {
+    "description": "Citrus",
+    "score": 0.8849
+   },
+   {
+    "description": "Sweet lemon",
+    "score": 0.8403
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7649
+   },
+   {
+    "description": "Yellow",
+    "score": 0.7582
+   }
+  ],
+  "images/lemon/lemon_16.jpg": [
+   {
+    "description": "Lemon",
+    "score": 0.8797
+   },
+   {
+    "description": "Citrus",
+    "score": 0.8706
+   },
+   {
+    "description": "Sweet lemon",
+    "score": 0.8666
+   },
+   {
+    "description": "Yellow",
+    "score": 0.8209
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7836
+   }
+  ],
+  "images/lemon/lemon_17.jpg": [
+   {
+    "description": "Lemon",
+    "score": 0.8632
+   },
+   {
+    "description": "Citrus",
+    "score": 0.8534
+   },
+   {
+    "description": "Yellow",
+    "score": 0.8106
+   },
+   {
+    "description": "Sweet lemon",
+    "score": 0.8031
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7858
+   }
+  ],
+  "images/lemon/lemon_18.jpg": [
+   {
+    "description": "Lemon",
+    "score": 0.9125
+   },
+   {
+    "description": "Citrus",
+    "score": 0.9046
+   },
+   {
+    "description": "Sweet lemon",
+    "score": 0.8526
+   },
+   {
+    "description": "Yellow",
+    "score": 0.746
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7176
+   }
+  ],
+  "images/lemon/lemon_19.jpg": [
+   {
+    "description": "Lemon",
+    "score": 0.9382
+   },
+   {
+    "description": "Citrus",
+    "score": 0.8435
+   },
+   {
+    "description": "Sweet lemon",
+    "score": 0.8003
+   },
+   {
+    "description": "Yellow",
+    "score": 0.7437
+   },
+   {
+    "description": "Fruit",
+    "score": 0.7114
+   }
+  ],
+  "images/lemon/lemon_20.jpg": [
+   {
+    "description": "Lemon",
+    "score": 0.936
+   },
+   {
+    "description": "Citrus",
+    "score": 0.8698
+   },
+   {
+    "description": "Sweet lemon",
+    "score": 0.7945
+   },
+   {
+    "description": "Fruit",
+    "score": 0.769
+   },
+   {
+    "description": "Yellow",
+    "score": 0.7534
+   }
+  ]
+ }
+}
