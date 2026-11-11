@@ -204,10 +204,16 @@ int callVision(const uint8_t* img, int len, String labels[], float scores[], int
   WiFiClientSecure client;
   client.setInsecure();
   HTTPClient http;
-  http.setTimeout(15000);
+  http.setConnectTimeout(20000);               // 시뮬레이터(Wokwi)는 느리므로 넉넉하게
+  http.setTimeout(20000);
   if (!http.begin(client, String(VISION_URL) + apiKey)) return -1;
   http.addHeader("Content-Type", "application/json");
   int code = http.POST(body);
+  if (code < 0) {                              // 서버에 연결하지 못함 (Wi-Fi, DNS, TLS, 시간 초과)
+    Serial.printf("[연결 오류] %d: %s\n", code, http.errorToString(code).c_str());
+    http.end();
+    return -1;
+  }
   String resp = http.getString();
   http.end();
 

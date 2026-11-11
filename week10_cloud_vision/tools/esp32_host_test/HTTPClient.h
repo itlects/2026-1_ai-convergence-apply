@@ -9,6 +9,8 @@ class HTTPClient {
  public:
   bool begin(NetworkClient&, String u) { url = u.s; return true; }
   void setTimeout(uint16_t) {}
+  void setConnectTimeout(int32_t) {}
+  static String errorToString(int e) { return String("connection failed"); }
   void setFollowRedirects(followRedirects_t) {}
   void addHeader(const String&, const String&) {}
   int GET() { int c = mockGET(url, resp); stream.data = resp; return c; }
