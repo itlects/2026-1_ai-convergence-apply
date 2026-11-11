@@ -1,0 +1,7 @@
+
+=== 10주차 예제1: 분류 결과 표시 회로 점검 ===
+LED1 (GPIO32) = apple
+LED2 (GPIO33) = banana
+LED3 (GPIO25) = orange
+LED4 (GPIO26) = lemon
+BTN1(GPIO23)=다음 LED + 정답음, BTN2(GPIO22)=unknown 깜빡임 + 오답음

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="620" viewBox="0 0 1400 620" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif">
+<rect width="1400" height="620" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1d2433"/></marker></defs>
+<text x="30" y="44" font-size="26" fill="#1d2433" xml:space="preserve" text-anchor="start" font-weight="bold">라벨 매핑 규칙 — Vision의 자유 라벨을 우리의 4개 클래스로 바꾸기</text>
+<text x="30" y="72" font-size="15" fill="#5b6475" xml:space="preserve" text-anchor="start" font-weight="normal">score가 MIN_SCORE 이상이고 키워드가 들어 있는 라벨 중, score가 가장 높은 것의 클래스를 예측으로 한다 (예시 값)</text>
+<rect x="30" y="105" width="430" height="330" rx="10" fill="#fafbfc" stroke="#9aa3b2" stroke-width="1.5"/>
+<text x="50" y="135" font-size="16" fill="#1d2433" xml:space="preserve" text-anchor="start" font-weight="bold">예 1) apple 사진</text>
+<text x="50" y="165" font-size="13" fill="#5b6475" xml:space="preserve" text-anchor="start" font-weight="normal">description</text>
+<text x="240" y="165" font-size="13" fill="#5b6475" xml:space="preserve" text-anchor="start" font-weight="normal">score</text>
+<text x="320" y="165" font-size="13" fill="#5b6475" xml:space="preserve" text-anchor="start" font-weight="normal">키워드 일치</text>
+<text x="50" y="200" font-size="15" fill="#1d2433" xml:space="preserve" text-anchor="start" font-weight="normal">Fruit</text>
+<text x="240" y="200" font-size="15" fill="#1d2433" xml:space="preserve" text-anchor="start" font-weight="normal">0.96</text>
+<text x="320" y="200" font-size="15" fill="#9aa3b2" xml:space="preserve" text-anchor="start" font-weight="normal">-</text>
+<text x="50" y="236" font-size="15" fill="#1d2433" xml:space="preserve" text-anchor="start" font-weight="normal">Apple</text>
+<text x="240" y="236" font-size="15" fill="#1d2433" xml:space="preserve" text-anchor="start" font-weight="normal">0.93</text>
+<text x="320" y="236" font-size="15" fill="#7b4fc9" xml:space="preserve" text-anchor="start" font-weight="bold">apple</text>
+<text x="50" y="272" font-size="15" fill="#1d2433" xml:space="preserve" text-anchor="start" font-weight="normal">Mcintosh</text>
+<text x="240" y="272" font-size="15" fill="#1d2433" xml:space="preserve" text-anchor="start" font-weight="normal">0.80</text>
+<text x="320" y="272" font-size="15" fill="#7b4fc9" xml:space="preserve" text-anchor="start" font-weight="bold">apple</text>
+<rect x="50" y="350" width="390" height="60" rx="10" fill="#e6f5ec" stroke="#2e9e5b" stroke-width="2"/>
+<text x="245" y="387" font-size="17" fill="#2e9e5b" xml:space="preserve" text-anchor="middle" font-weight="bold">예측 → apple</text>
+<rect x="485" y="105" width="430" height="330" rx="10" fill="#fafbfc" stroke="#9aa3b2" stroke-width="1.5"/>
+<text x="505" y="135" font-size="16" fill="#1d2433" xml:space="preserve" text-anchor="start" font-weight="bold">예 2) lemon 사진</text>
+<text x="505" y="165" font-size="13" fill="#5b6475" xml:space="preserve" text-anchor="start" font-weight="normal">description</text>
+<text x="695" y="165" font-size="13" fill="#5b6475" xml:space="preserve" text-anchor="start" font-weight="normal">score</text>
+<text x="775" y="165" font-size="13" fill="#5b6475" xml:space="preserve" text-anchor="start" font-weight="normal">키워드 일치</text>
+<text x="505" y="200" font-size="15" fill="#1d2433" xml:space="preserve" text-anchor="start" font-weight="normal">Citrus</text>
+<text x="695" y="200" font-size="15" fill="#1d2433" xml:space="preserve" text-anchor="start" font-weight="normal">0.93</text>
+<text x="775" y="200" font-size="15" fill="#9aa3b2" xml:space="preserve" text-anchor="start" font-weight="normal">-</text>
+<text x="505" y="236" font-size="15" fill="#1d2433" xml:space="preserve" text-anchor="start" font-weight="normal">Orange</text>
+<text x="695" y="236" font-size="15" fill="#1d2433" xml:space="preserve" text-anchor="start" font-weight="normal">0.72</text>
+<text x="775" y="236" font-size="15" fill="#7b4fc9" xml:space="preserve" text-anchor="start" font-weight="bold">orange</text>
+<text x="505" y="272" font-size="15" fill="#1d2433" xml:space="preserve" text-anchor="start" font-weight="normal">Lemon</text>
+<text x="695" y="272" font-size="15" fill="#1d2433" xml:space="preserve" text-anchor="start" font-weight="normal">0.61</text>
+<text x="775" y="272" font-size="15" fill="#7b4fc9" xml:space="preserve" text-anchor="start" font-weight="bold">lemon</text>
+<rect x="505" y="350" width="390" height="60" rx="10" fill="#fbe9e9" stroke="#d64545" stroke-width="2"/>
+<text x="700" y="387" font-size="17" fill="#d64545" xml:space="preserve" text-anchor="middle" font-weight="bold">예측 → orange (오답)</text>
+<rect x="940" y="105" width="430" height="330" rx="10" fill="#fafbfc" stroke="#9aa3b2" stroke-width="1.5"/>
+<text x="960" y="135" font-size="16" fill="#1d2433" xml:space="preserve" text-anchor="start" font-weight="bold">예 3) apple 사진</text>
+<text x="960" y="165" font-size="13" fill="#5b6475" xml:space="preserve" text-anchor="start" font-weight="normal">description</text>
+<text x="1150" y="165" font-size="13" fill="#5b6475" xml:space="preserve" text-anchor="start" font-weight="normal">score</text>
+<text x="1230" y="165" font-size="13" fill="#5b6475" xml:space="preserve" text-anchor="start" font-weight="normal">키워드 일치</text>
+<text x="960" y="200" font-size="15" fill="#1d2433" xml:space="preserve" text-anchor="start" font-weight="normal">Fruit</text>
+<text x="1150" y="200" font-size="15" fill="#1d2433" xml:space="preserve" text-anchor="start" font-weight="normal">0.95</text>
+<text x="1230" y="200" font-size="15" fill="#9aa3b2" xml:space="preserve" text-anchor="start" font-weight="normal">-</text>
+<text x="960" y="236" font-size="15" fill="#1d2433" xml:space="preserve" text-anchor="start" font-weight="normal">Red</text>
+<text x="1150" y="236" font-size="15" fill="#1d2433" xml:space="preserve" text-anchor="start" font-weight="normal">0.81</text>
+<text x="1230" y="236" font-size="15" fill="#9aa3b2" xml:space="preserve" text-anchor="start" font-weight="normal">-</text>
+<rect x="960" y="350" width="390" height="60" rx="10" fill="#fbe9e9" stroke="#d64545" stroke-width="2"/>
+<text x="1155" y="387" font-size="17" fill="#d64545" xml:space="preserve" text-anchor="middle" font-weight="bold">예측 → unknown (오답)</text>
+<rect x="30" y="460" width="1340" height="130" rx="10" fill="#f1ebfb" stroke="#7b4fc9" stroke-width="2"/>
+<text x="60" y="492" font-size="16" fill="#7b4fc9" xml:space="preserve" text-anchor="start" font-weight="bold">규칙을 바꾸면 결과가 바뀐다 → 어떤 규칙이 좋은지는 검증(val) 데이터로 비교해 정한다</text>
+<text x="60" y="526" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="start" font-weight="normal">키워드 예: apple=[apple, mcintosh, malus]  banana=[banana, plantain]  orange=[orange, tangerine, mandarin, clementine]  lemon=[lemon, citron]</text>
+<text x="60" y="556" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="start" font-weight="normal">생각해 보기: 'Orange'는 과일 이름이면서 색 이름이다. 'Citrus'는 오렌지·레몬 둘 다에 붙는다. 'Pineapple'에는 'apple'이 들어 있다.</text>
+</svg>

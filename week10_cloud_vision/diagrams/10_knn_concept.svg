@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="600" viewBox="0 0 1400 600" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif">
+<rect width="1400" height="600" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1d2433"/></marker></defs>
+<text x="30" y="44" font-size="26" fill="#1d2433" xml:space="preserve" text-anchor="start" font-weight="bold">kNN(k-최근접 이웃) — train 데이터로 직접 학습하는 가장 단순한 지도학습</text>
+<text x="30" y="72" font-size="15" fill="#5b6475" xml:space="preserve" text-anchor="start" font-weight="normal">이미지 → 색 특징(평균 R·G·B 등) → 가장 가까운 k개 train 이미지의 정답으로 다수결</text>
+<rect x="30" y="100" width="640" height="460" rx="10" fill="#fafbfc" stroke="#9aa3b2" stroke-width="1.5"/>
+<line x1="80" y1="520" x2="640" y2="520" stroke="#1d2433" stroke-width="2"/>
+<line x1="80" y1="520" x2="80" y2="130" stroke="#1d2433" stroke-width="2"/>
+<text x="360" y="552" font-size="14" fill="#5b6475" xml:space="preserve" text-anchor="middle" font-weight="bold">특징 1: 평균 R(빨강)</text>
+<text x="60" y="120" font-size="14" fill="#5b6475" xml:space="preserve" text-anchor="start" font-weight="bold">특징 2: 평균 B(파랑)</text>
+<circle cx="523" cy="328" r="8" fill="#d64545" opacity="0.85"/>
+<circle cx="494" cy="322" r="8" fill="#d64545" opacity="0.85"/>
+<circle cx="513" cy="294" r="8" fill="#d64545" opacity="0.85"/>
+<circle cx="573" cy="303" r="8" fill="#d64545" opacity="0.85"/>
+<circle cx="519" cy="316" r="8" fill="#d64545" opacity="0.85"/>
+<circle cx="552" cy="299" r="8" fill="#d64545" opacity="0.85"/>
+<circle cx="536" cy="279" r="8" fill="#d64545" opacity="0.85"/>
+<circle cx="510" cy="290" r="8" fill="#d64545" opacity="0.85"/>
+<circle cx="483" cy="267" r="8" fill="#d64545" opacity="0.85"/>
+<text x="520" y="240" font-size="14" fill="#d64545" xml:space="preserve" text-anchor="middle" font-weight="bold">apple</text>
+<circle cx="254" cy="415" r="8" fill="#c99a06" opacity="0.85"/>
+<circle cx="295" cy="413" r="8" fill="#c99a06" opacity="0.85"/>
+<circle cx="302" cy="391" r="8" fill="#c99a06" opacity="0.85"/>
+<circle cx="298" cy="425" r="8" fill="#c99a06" opacity="0.85"/>
+<circle cx="321" cy="401" r="8" fill="#c99a06" opacity="0.85"/>
+<circle cx="289" cy="376" r="8" fill="#c99a06" opacity="0.85"/>
+<circle cx="286" cy="372" r="8" fill="#c99a06" opacity="0.85"/>
+<circle cx="260" cy="444" r="8" fill="#c99a06" opacity="0.85"/>
+<circle cx="238" cy="438" r="8" fill="#c99a06" opacity="0.85"/>
+<text x="300" y="480" font-size="14" fill="#c99a06" xml:space="preserve" text-anchor="middle" font-weight="bold">banana</text>
+<circle cx="569" cy="433" r="8" fill="#e08a1e" opacity="0.85"/>
+<circle cx="573" cy="452" r="8" fill="#e08a1e" opacity="0.85"/>
+<circle cx="589" cy="435" r="8" fill="#e08a1e" opacity="0.85"/>
+<circle cx="543" cy="427" r="8" fill="#e08a1e" opacity="0.85"/>
+<circle cx="532" cy="439" r="8" fill="#e08a1e" opacity="0.85"/>
+<circle cx="538" cy="464" r="8" fill="#e08a1e" opacity="0.85"/>
+<circle cx="508" cy="416" r="8" fill="#e08a1e" opacity="0.85"/>
+<circle cx="533" cy="394" r="8" fill="#e08a1e" opacity="0.85"/>
+<circle cx="613" cy="387" r="8" fill="#e08a1e" opacity="0.85"/>
+<text x="560" y="500" font-size="14" fill="#e08a1e" xml:space="preserve" text-anchor="middle" font-weight="bold">orange</text>
+<circle cx="372" cy="448" r="8" fill="#b5a400" opacity="0.85"/>
+<circle cx="426" cy="416" r="8" fill="#b5a400" opacity="0.85"/>
+<circle cx="410" cy="444" r="8" fill="#b5a400" opacity="0.85"/>
+<circle cx="376" cy="445" r="8" fill="#b5a400" opacity="0.85"/>
+<circle cx="398" cy="435" r="8" fill="#b5a400" opacity="0.85"/>
+<circle cx="378" cy="468" r="8" fill="#b5a400" opacity="0.85"/>
+<circle cx="432" cy="407" r="8" fill="#b5a400" opacity="0.85"/>
+<circle cx="423" cy="481" r="8" fill="#b5a400" opacity="0.85"/>
+<circle cx="366" cy="467" r="8" fill="#b5a400" opacity="0.85"/>
+<text x="380" y="510" font-size="14" fill="#b5a400" xml:space="preserve" text-anchor="middle" font-weight="bold">lemon</text>
+<circle cx="470" cy="430" r="10" fill="#fff" stroke="#1d2433" stroke-width="3"/>
+<circle cx="470" cy="430" r="62" fill="none" stroke="#7b4fc9" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="470" y="360" font-size="14" fill="#7b4fc9" xml:space="preserve" text-anchor="middle" font-weight="bold">새 이미지 ? (k=5)</text>
+<rect x="700" y="100" width="670" height="220" rx="10" fill="#e8f0fc" stroke="#2f6fd6" stroke-width="2"/>
+<text x="1035.0" y="128" font-size="16" fill="#2f6fd6" xml:space="preserve" text-anchor="middle" font-weight="bold">학습(fit)과 예측(predict)</text>
+<text x="1035.0" y="154" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">fit(train 특징, train 정답) : 특징과 정답을 기억</text>
+<text x="1035.0" y="176" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">predict(새 특징) : 가장 가까운 k개를 찾아 다수결</text>
+<text x="1035.0" y="198" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">k가 작으면 예민(과적합), 크면 둔감(과소적합)</text>
+<text x="1035.0" y="220" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">→ k는 val 정확도로 고른다</text>
+<rect x="700" y="340" width="670" height="220" rx="10" fill="#e6f5ec" stroke="#2e9e5b" stroke-width="2"/>
+<text x="1035.0" y="368" font-size="16" fill="#2e9e5b" xml:space="preserve" text-anchor="middle" font-weight="bold">Cloud Vision과 비교</text>
+<text x="1035.0" y="394" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">Vision: 학습 안 함, 수천 종 라벨, 인터넷·비용 필요</text>
+<text x="1035.0" y="416" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">kNN: 우리 데이터로 학습, 4종만, 오프라인 무료</text>
+<text x="1035.0" y="438" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">같은 test 12장으로 두 정확도를 비교</text>
+<text x="1035.0" y="460" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">11주차 Edge Impulse = 더 강한 모델을 직접 학습</text>
+</svg>

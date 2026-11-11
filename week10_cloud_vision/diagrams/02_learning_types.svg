@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="640" viewBox="0 0 1400 640" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif">
+<rect width="1400" height="640" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1d2433"/></marker></defs>
+<text x="30" y="44" font-size="26" fill="#1d2433" xml:space="preserve" text-anchor="start" font-weight="bold">머신러닝 학습의 종류 — 정답(레이블)이 있는가?</text>
+<text x="30" y="72" font-size="15" fill="#5b6475" xml:space="preserve" text-anchor="start" font-weight="normal">이번 주 과일 분류는 '지도학습 · 분류' 문제이다. Cloud Vision은 이미 학습된(사전학습) 모델을 빌려 쓰는 것</text>
+<rect x="30" y="110" width="430" height="300" rx="10" fill="#e8f0fc" stroke="#2f6fd6" stroke-width="2"/>
+<text x="245.0" y="138" font-size="16" fill="#2f6fd6" xml:space="preserve" text-anchor="middle" font-weight="bold">지도학습 (Supervised)</text>
+<text x="245.0" y="164" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">입력 + 정답 레이블로 학습</text>
+<text x="245.0" y="186" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal"></text>
+<text x="245.0" y="208" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">분류(Classification): 정해진 범주 중 하나</text>
+<text x="245.0" y="230" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">  예) 사진 → apple / banana / ...</text>
+<text x="245.0" y="252" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">회귀(Regression): 연속된 숫자 예측</text>
+<text x="245.0" y="274" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">  예) 사진 → 무게 152g</text>
+<text x="245.0" y="296" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal"></text>
+<text x="245.0" y="318" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">★ 10주차 실습</text>
+<rect x="485" y="110" width="430" height="300" rx="10" fill="#e6f5ec" stroke="#2e9e5b" stroke-width="2"/>
+<text x="700.0" y="138" font-size="16" fill="#2e9e5b" xml:space="preserve" text-anchor="middle" font-weight="bold">비지도학습 (Unsupervised)</text>
+<text x="700.0" y="164" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">정답 없이 데이터 구조를 찾음</text>
+<text x="700.0" y="186" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal"></text>
+<text x="700.0" y="208" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">군집(Clustering)</text>
+<text x="700.0" y="230" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">  예) 비슷한 사진끼리 묶기</text>
+<text x="700.0" y="252" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">차원 축소</text>
+<text x="700.0" y="274" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">  예) 특징을 2차원으로 시각화</text>
+<text x="700.0" y="296" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal"></text>
+<text x="700.0" y="318" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">정답표가 없을 때 사용</text>
+<rect x="940" y="110" width="430" height="300" rx="10" fill="#fdf1e2" stroke="#e08a1e" stroke-width="2"/>
+<text x="1155.0" y="138" font-size="16" fill="#e08a1e" xml:space="preserve" text-anchor="middle" font-weight="bold">강화학습 (Reinforcement)</text>
+<text x="1155.0" y="164" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">행동 → 보상을 받으며 학습</text>
+<text x="1155.0" y="186" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal"></text>
+<text x="1155.0" y="208" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">정답 대신 '점수(보상)'</text>
+<text x="1155.0" y="230" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">  예) 게임, 로봇 제어</text>
+<text x="1155.0" y="252" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal"></text>
+<text x="1155.0" y="274" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal"></text>
+<text x="1155.0" y="296" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal"></text>
+<text x="1155.0" y="318" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">이번 주 범위 밖</text>
+<rect x="30" y="440" width="1340" height="160" rx="10" fill="#f1ebfb" stroke="#7b4fc9" stroke-width="2"/>
+<text x="60" y="475" font-size="16" fill="#7b4fc9" xml:space="preserve" text-anchor="start" font-weight="bold">이번 주에 쓰는 두 가지 방법</text>
+<text x="60" y="510" font-size="15" fill="#1d2433" xml:space="preserve" text-anchor="start" font-weight="normal">A. Cloud Vision (사전학습 모델 사용) : Google이 수많은 이미지로 이미 학습해 둔 모델 → 우리는 학습시키지 않고 '결과를 검증'만 한다</text>
+<text x="60" y="545" font-size="15" fill="#1d2433" xml:space="preserve" text-anchor="start" font-weight="normal">B. kNN 분류기 (직접 지도학습) : 우리가 가진 train 56장의 색 특징과 정답으로 직접 학습 → val로 k를 고르고 test로 평가</text>
+<text x="60" y="580" font-size="15" fill="#7b4fc9" xml:space="preserve" text-anchor="start" font-weight="bold">두 방법 모두 같은 test 12장으로 정확도를 계산해야 공정하게 비교할 수 있다</text>
+</svg>

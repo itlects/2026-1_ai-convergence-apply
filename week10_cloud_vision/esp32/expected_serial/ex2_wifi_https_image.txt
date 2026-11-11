@@ -1,0 +1,19 @@
+
+=== 10주차 예제2: Wi-Fi + HTTPS 이미지 다운로드 ===
+Wi-Fi 연결 중: YOUR_WIFI_SSID 
+[연결됨] IP 주소: 192.168.0.23
+신호 세기(RSSI): -58 dBm  (-70보다 크면 양호)
+
+[1/4] 다운로드: images/apple/apple_02.jpg
+  크기: 4925 bytes, 걸린 시간: 49 ms
+  첫 3바이트: FF D8 FF  (FF D8 FF 이면 JPEG)
+  Base64 길이: 6568 글자 (원본의 약 4/3배)
+  Base64 앞부분: /9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAIBAQEB...
+
+BTN1(GPIO23)을 누르면 다음 이미지를 받습니다.
+
+[2/4] 다운로드: images/banana/banana_01.jpg
+  크기: 3068 bytes, 걸린 시간: 35 ms
+  첫 3바이트: FF D8 FF  (FF D8 FF 이면 JPEG)
+  Base64 길이: 4092 글자 (원본의 약 4/3배)
+  Base64 앞부분: /9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAIBAQEB...

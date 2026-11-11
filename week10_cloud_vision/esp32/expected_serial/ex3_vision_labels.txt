@@ -1,0 +1,16 @@
+
+=== 10주차 예제3: ESP32 → Cloud Vision 라벨 검출 ===
+Wi-Fi 연결 중: YOUR_WIFI_SSID 
+[연결됨] IP: 192.168.0.23
+
+>> Cloud Vision API 키를 붙여넣고 Enter 를 누르세요 (줄 끝: 새 줄)
+키 입력 완료: TESTKE****** (12글자)
+
+[1/4] images/apple/apple_02.jpg
+  이미지 4925 bytes, 처리 시간 49 ms
+  순위  label.description          label.score
+   1    Fruit                      0.960
+   2    Apple                      0.930
+   3    Mcintosh                   0.800
+
+BTN1(GPIO23)을 누르면 다음 이미지를 분석합니다.

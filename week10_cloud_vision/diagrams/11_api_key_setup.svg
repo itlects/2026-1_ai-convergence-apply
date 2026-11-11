@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="470" viewBox="0 0 1400 470" font-family="Noto Sans CJK KR, Noto Sans KR, sans-serif">
+<rect width="1400" height="470" fill="#ffffff"/>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1d2433"/></marker></defs>
+<text x="30" y="44" font-size="26" fill="#1d2433" xml:space="preserve" text-anchor="start" font-weight="bold">Cloud Vision API 키 준비 (강의자, 수업 전 1회)</text>
+<text x="30" y="72" font-size="15" fill="#5b6475" xml:space="preserve" text-anchor="start" font-weight="normal">학생 개인 결제 설정 없이 수업용 키 1개를 수업 시간에만 나눠 주고, 끝나면 삭제한다</text>
+<rect x="30" y="110" width="250" height="190" rx="10" fill="#e8f0fc" stroke="#2f6fd6" stroke-width="2"/>
+<text x="155.0" y="138" font-size="16" fill="#2f6fd6" xml:space="preserve" text-anchor="middle" font-weight="bold">1. 프로젝트</text>
+<text x="155.0" y="164" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">console.cloud.google.com</text>
+<text x="155.0" y="186" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">새 프로젝트 만들기</text>
+<text x="155.0" y="208" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">결제 계정 연결</text>
+<line x1="282" y1="205" x2="300" y2="205" stroke="#1d2433" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="302" y="110" width="250" height="190" rx="10" fill="#e6f5ec" stroke="#2e9e5b" stroke-width="2"/>
+<text x="427.0" y="138" font-size="16" fill="#2e9e5b" xml:space="preserve" text-anchor="middle" font-weight="bold">2. API 사용 설정</text>
+<text x="427.0" y="164" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">API 및 서비스 →</text>
+<text x="427.0" y="186" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">라이브러리 →</text>
+<text x="427.0" y="208" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">Cloud Vision API 사용</text>
+<line x1="554" y1="205" x2="572" y2="205" stroke="#1d2433" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="574" y="110" width="250" height="190" rx="10" fill="#fdf1e2" stroke="#e08a1e" stroke-width="2"/>
+<text x="699.0" y="138" font-size="16" fill="#e08a1e" xml:space="preserve" text-anchor="middle" font-weight="bold">3. API 키 만들기</text>
+<text x="699.0" y="164" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">사용자 인증 정보 →</text>
+<text x="699.0" y="186" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">+ 사용자 인증 정보 만들기</text>
+<text x="699.0" y="208" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">→ API 키</text>
+<line x1="826" y1="205" x2="844" y2="205" stroke="#1d2433" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="846" y="110" width="250" height="190" rx="10" fill="#f1ebfb" stroke="#7b4fc9" stroke-width="2"/>
+<text x="971.0" y="138" font-size="16" fill="#7b4fc9" xml:space="preserve" text-anchor="middle" font-weight="bold">4. 키 제한</text>
+<text x="971.0" y="164" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">API 제한: Cloud Vision API만</text>
+<text x="971.0" y="186" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">할당량(요청/일) 제한</text>
+<text x="971.0" y="208" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">예산 알림 설정</text>
+<line x1="1098" y1="205" x2="1116" y2="205" stroke="#1d2433" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="1118" y="110" width="250" height="190" rx="10" fill="#fbe9e9" stroke="#d64545" stroke-width="2"/>
+<text x="1243.0" y="138" font-size="16" fill="#d64545" xml:space="preserve" text-anchor="middle" font-weight="bold">5. 수업 후</text>
+<text x="1243.0" y="164" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">키 삭제 또는 사용 중지</text>
+<text x="1243.0" y="186" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">공개 자료에 키 금지</text>
+<text x="1243.0" y="208" font-size="14" fill="#1d2433" xml:space="preserve" text-anchor="middle" font-weight="normal">(Notion·GitHub·Drive)</text>
+<rect x="30" y="330" width="1340" height="110" rx="10" fill="#fafbfc" stroke="#9aa3b2" stroke-width="1.5"/>
+<text x="60" y="365" font-size="15" fill="#1d2433" xml:space="preserve" text-anchor="start" font-weight="normal">학생 입력 위치: 워크북 2 Colab = getpass 입력창(노트북에 저장 안 됨) / 워크북 1 ESP32 = 시리얼 모니터 입력(전원 끄면 사라짐)</text>
+<text x="60" y="400" font-size="15" fill="#1d2433" xml:space="preserve" text-anchor="start" font-weight="normal">비용: LABEL_DETECTION은 매월 처음 1,000건 무료, 이후 1,000건당 과금 → 80장 캐시를 강의자가 1회 만들어 두면 학생 호출을 크게 줄일 수 있다</text>
+</svg>

@@ -1,0 +1,36 @@
+
+=== 10주차 예제4: Vision 라벨 → 과일 4종 분류기 ===
+Wi-Fi 연결 중: YOUR_WIFI_SSID 
+[연결됨] IP: 192.168.0.23
+>> Cloud Vision API 키를 붙여넣고 Enter (줄 끝: 새 줄)
+키 입력 완료: TESTKE****** (12글자)
+BTN1(GPIO23)=시험 이미지 1장 분류, BTN2(GPIO22)=시험 데이터 12장 전체 평가
+  Vision 라벨:
+    Lemon                    0.920
+    Citrus                   0.900
+    Yellow                   0.840
+[ 7] images/lemon/lemon_19.jpg    정답=lemon   예측=lemon   근거=Lemon(0.92) O
+
+===== 시험(test) 데이터 12장 평가 (MIN_SCORE=0.50) =====
+[ 1] images/apple/apple_09.jpg    정답=apple   예측=apple   근거=Apple(0.93) O
+[ 2] images/apple/apple_01.jpg    정답=apple   예측=apple   근거=Apple(0.93) O
+[ 3] images/apple/apple_04.jpg    정답=apple   예측=unknown 근거=-(0.00) X
+[ 4] images/banana/banana_20.jpg  정답=banana  예측=banana  근거=Banana(0.97) O
+[ 5] images/banana/banana_07.jpg  정답=banana  예측=banana  근거=Banana(0.97) O
+[ 6] images/banana/banana_18.jpg  정답=banana  예측=banana  근거=Banana(0.97) O
+[ 7] images/lemon/lemon_19.jpg    정답=lemon   예측=lemon   근거=Lemon(0.92) O
+[ 8] images/lemon/lemon_12.jpg    정답=lemon   예측=orange  근거=Orange(0.72) X
+[ 9] images/lemon/lemon_04.jpg    정답=lemon   예측=lemon   근거=Lemon(0.92) O
+[10] images/orange/orange_08.jpg  정답=orange  예측=orange  근거=Orange(0.91) O
+[11] images/orange/orange_02.jpg  정답=orange  예측=orange  근거=Orange(0.91) O
+[12] images/orange/orange_03.jpg  정답=orange  예측=orange  근거=Orange(0.91) O
+
+정확도(Accuracy) = 10 / 12 = 0.833
+
+혼동행렬 (행=정답, 열=예측)
+            apple banana orange  lemon unknown
+  apple         2      0      0      0      1
+  banana        0      3      0      0      0
+  orange        0      0      3      0      0
+  lemon         0      0      1      2      0
+    (tone 1047 Hz)

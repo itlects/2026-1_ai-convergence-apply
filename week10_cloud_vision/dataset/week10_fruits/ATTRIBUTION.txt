@@ -1,0 +1,5 @@
+Images: Fruits-360 dataset (100x100 branch), Mihai Oltean, 2017-.
+https://github.com/fruits-360/fruits-360-100x100
+License: CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+Changes: 4 classes x 20 images selected and renamed for the Week10 class.
+This subset is distributed under the same CC BY-SA 4.0 license.
