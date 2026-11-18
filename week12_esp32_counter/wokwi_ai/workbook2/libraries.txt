@@ -1,0 +1,1 @@
+# No external Arduino libraries required. Arduino ESP32 core only.
