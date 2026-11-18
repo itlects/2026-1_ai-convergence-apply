@@ -1,0 +1,159 @@
+{
+  "version": 1,
+  "editor": "wokwi",
+  "author": "AI Convergence Week12",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": 130,
+      "left": 20,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "sonar",
+      "top": -90,
+      "left": 300,
+      "attrs": {
+        "distance": "180"
+      }
+    },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "pot",
+      "top": -80,
+      "left": -30,
+      "attrs": {
+        "value": "512"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "reset",
+      "top": 255,
+      "left": 430,
+      "attrs": {
+        "color": "blue",
+        "label": "RESET",
+        "key": "R",
+        "bounce": "0"
+      }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led",
+      "top": 130,
+      "left": 430,
+      "attrs": {
+        "color": "green",
+        "label": "AI TARGET"
+      }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 185,
+      "left": 445,
+      "attrs": {
+        "value": "220"
+      }
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz",
+      "top": 345,
+      "left": 425,
+      "attrs": {
+        "volume": "0.3"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "esp:3V3",
+      "pot:VCC",
+      "red",
+      []
+    ],
+    [
+      "esp:GND.1",
+      "pot:GND",
+      "black",
+      []
+    ],
+    [
+      "pot:SIG",
+      "esp:34",
+      "green",
+      []
+    ],
+    [
+      "esp:5V",
+      "sonar:VCC",
+      "red",
+      []
+    ],
+    [
+      "esp:GND.1",
+      "sonar:GND",
+      "black",
+      []
+    ],
+    [
+      "esp:26",
+      "sonar:TRIG",
+      "blue",
+      []
+    ],
+    [
+      "esp:27",
+      "sonar:ECHO",
+      "purple",
+      []
+    ],
+    [
+      "esp:18",
+      "reset:1.l",
+      "orange",
+      []
+    ],
+    [
+      "reset:2.l",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "esp:23",
+      "r1:1",
+      "green",
+      []
+    ],
+    [
+      "r1:2",
+      "led:A",
+      "green",
+      []
+    ],
+    [
+      "led:C",
+      "esp:GND.1",
+      "black",
+      []
+    ],
+    [
+      "esp:25",
+      "bz:2",
+      "orange",
+      []
+    ],
+    [
+      "bz:1",
+      "esp:GND.1",
+      "black",
+      []
+    ]
+  ],
+  "dependencies": {}
+}
