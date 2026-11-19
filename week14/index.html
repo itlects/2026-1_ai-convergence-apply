@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ko">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>14주 음성 지식 안내</title>
+<style>
+body { font: 18px system-ui; background: #edf4fb; color: #172e45; margin: 0; }
+main { max-width: 680px; margin: 40px auto; padding: 28px; background: white; border-radius: 20px; }
+input { box-sizing: border-box; width: 100%; padding: 14px; font: inherit; }
+button { margin: 10px 4px 0 0; padding: 12px; font: inherit; background: #135e8b; color: white; border: 0; border-radius: 8px; }
+section { background: #eaf6ee; padding: 18px; margin-top: 20px; border-radius: 12px; }
+</style>
+<main>
+<h1>🎙 음성 지식 안내</h1>
+<p>질문 → 지식 검색 → 근거 응답 → 음성 읽기</p>
+<label for="q">질문</label>
+<input id="q" placeholder="예: 도서관 운영 시간">
+<button id="mic">🎤 음성 입력</button>
+<button id="ask">검색</button>
+<button id="speak">🔊 답변 읽기</button>
+<p id="status" role="status">준비 완료</p>
+<section>
+<h2>답변</h2><p id="answer">질문을 입력하세요.</p>
+<p id="source">근거: -</p>
+</section>
+</main>
+<script>
+const q = document.querySelector("#q");
+const answer = document.querySelector("#answer");
+const source = document.querySelector("#source");
+const status = document.querySelector("#status");
+let lastAnswer = "";
+document.querySelector("#ask").onclick = async () => {
+    try {
+        lastAnswer = "";
+        const res = await fetch("/ask", {
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({question: q.value})
+        });
+        if (!res.ok) throw new Error("질문 또는 서버를 확인하세요.");
+        const data = await res.json();
+        lastAnswer = data.answer;
+        answer.textContent = data.answer;
+        source.textContent = "근거: " + (data.source ?? "없음") + " / 점수: " + data.score;
+        status.textContent = "검색 완료";
+    } catch (e) {
+        status.textContent = e.message;
+    }
+};
+document.querySelector("#mic").onclick = () => {
+    const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!Recognition) {
+        status.textContent = "음성 인식 미지원: 질문을 직접 입력하세요.";
+        return;
+    }
+    const rec = new Recognition();
+    rec.lang = "ko-KR";
+    rec.onresult = event => {
+        q.value = event.results[0][0].transcript;
+        status.textContent = "인식 완료: 검색을 누르세요.";
+    };
+    rec.onerror = event => {
+        status.textContent = "인식 실패: " + event.error + " / 직접 입력 가능";
+    };
+    try {
+        rec.start();
+        status.textContent = "말씀하세요.";
+    } catch (e) {
+        status.textContent = "마이크 시작 실패: 직접 입력 가능";
+    }
+};
+document.querySelector("#speak").onclick = () => {
+    if (!lastAnswer || !window.speechSynthesis) {
+        status.textContent = "답변 또는 음성 기능을 확인하세요.";
+        return;
+    }
+    const utterance = new SpeechSynthesisUtterance(lastAnswer);
+    utterance.lang = "ko-KR";
+    speechSynthesis.cancel();
+    speechSynthesis.speak(utterance);
+};
+</script>
+</html>
