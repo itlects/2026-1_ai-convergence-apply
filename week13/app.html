@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>13주 음성 라벨링 카운터</title>
+<style>body{font:18px system-ui;background:#eef4f8;color:#142c43;margin:24px auto;max-width:900px;padding:0 16px}section{background:white;padding:20px;margin:16px 0;border-radius:12px}button,input,textarea{font:inherit;margin:6px;padding:9px}textarea{width:90%}video{width:320px;max-width:100%;background:#222}#lamp{display:inline-block;width:24px;height:24px;background:#777;border-radius:50%}.on{background:#20b65c!important}pre{white-space:pre-wrap}button:disabled{opacity:.4}</style>
+<h1>현장 지식 기록소</h1><p>카메라 분류 → LED/카운터 → 녹음 → STT → 지식 저장</p>
+<section><h2>1. 인식과 카운터</h2><video id="video" autoplay playsinline muted></video><canvas id="canvas" width="32" height="32" hidden></canvas><br><button id="camera">카메라 시작</button><button id="red">빨강 샘플</button><button id="blue">파랑 샘플</button><button id="serial">ESP32 LED 연결(선택)</button><p><span id="lamp"></span> 인식: <b id="label">-</b> / <span id="count">0</span>건</p><button id="capture" disabled>이 결과 1건 확정 + LED</button></section>
+<section><h2>2. 음성 기록</h2><p>확정한 인식 결과에 현장 지식을 한 문장으로 설명하세요.</p><button id="record" disabled>녹음 시작</button><button id="stop" disabled>녹음 종료</button><audio id="audio" controls></audio><a id="wav" hidden download="record.wav">WAV 저장</a><br><button id="stt" disabled>음성→텍스트 (같은 문장 다시 말하기)</button><p>브라우저 음성인식 지원 및 네트워크 필요. 실패 시 직접 듣고 입력하세요. 민감정보를 말하지 마세요.</p><textarea id="note" placeholder="인식한 물체의 현장 지식을 입력/교정"></textarea><button id="save" disabled>지식 확정</button><pre id="status"></pre></section>
+<section><h2>3. 지식 검색 챗봇</h2><input id="question" placeholder="예: 빨강"><button id="ask">검색</button><button id="speak">답변 읽기</button><button id="export">JSONL 다운로드</button><pre id="answer"></pre><pre id="list"></pre></section>
+<script src="app.js"></script>
