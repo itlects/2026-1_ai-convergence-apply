@@ -35,6 +35,28 @@ $('stop').onclick=async()=>{ $('stop').disabled=true;const rate=ctx.sampleRate;p
 $('stt').onclick=()=>{const SR=window.SpeechRecognition||window.webkitSpeechRecognition;if(!SR){msg('STT 미지원: 녹음을 듣고 직접 입력하세요.');return;}if(!confirm('음성이 브라우저 음성인식 서비스로 전송될 수 있습니다. 진행할까요?'))return;const r=new SR();r.lang='ko-KR';r.onresult=e=>{$('note').value=e.results[0][0].transcript;msg('변환 결과를 검토/교정하세요.');};r.onerror=e=>msg('STT 오류: '+e.error+' / 직접 입력 가능');r.onend=()=>{$('stt').disabled=!held;$('save').disabled=!held;};$('stt').disabled=true;$('save').disabled=true;try{r.start();}catch(e){$('stt').disabled=false;$('save').disabled=false;msg(e.message);}};
 $('save').onclick=()=>{const text=$('note').value.trim();if(!held||!text){msg('기록 문장을 입력하세요.');return;}records.push({...held,text,source:'record_'+held.id+'.wav',verified:true});held=null;$('list').textContent=JSON.stringify(records,null,2);$('capture').disabled=!current;$('save').disabled=true;$('stt').disabled=true;$('record').disabled=true;light(false);msg('지식 저장 완료');};
 $('ask').onclick=()=>{const hits=search(records,$('question').value);result=hits.length?hits.map(r=>`[${r.source}] ${r.label}: ${r.text}`).join('\n'):'관련 지식이 없습니다.';$('answer').textContent=result;};
+$('voiceQuestion').onclick = () => {
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!SR) {
+    msg('음성 질문 미지원: 직접 입력하세요.');
+    return;
+  }
+  if (!confirm('음성이 브라우저 음성인식 서비스로 전송될 수 있습니다. 진행할까요?')) return;
+  const recognition = new SR();
+  recognition.lang = 'ko-KR';
+  recognition.onresult = event => {
+    $('question').value = event.results[0][0].transcript;
+    $('ask').click();
+  };
+  recognition.onerror = event => msg('음성 질문 오류: ' + event.error);
+  recognition.onend = () => { $('voiceQuestion').disabled = false; };
+  $('voiceQuestion').disabled = true;
+  try { recognition.start(); }
+  catch (error) {
+    $('voiceQuestion').disabled = false;
+    msg(error.message);
+  }
+};
 $('speak').onclick=()=>{if(!result)return;const u=new SpeechSynthesisUtterance(result);u.lang='ko-KR';speechSynthesis.speak(u);};
 $('export').onclick=()=>{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([records.map(r=>JSON.stringify(r)).join('\n')+'\n'],{type:'application/jsonl'}));a.download='field_knowledge.jsonl';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);};
 }
