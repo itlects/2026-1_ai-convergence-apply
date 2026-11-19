@@ -1,0 +1,12 @@
+const assert = require('node:assert/strict');
+const {classify,wavBytes,search} = require('./app.js');
+assert.equal(classify([220,30,30]),'red');
+assert.equal(classify([30,40,220]),'blue');
+assert.equal(classify([128,128,128]),null);
+const wav = new DataView(wavBytes([0,.5,-.5],16000));
+assert.equal(wav.byteLength,50);
+assert.equal(wav.getUint32(24,true),16000);
+assert.equal(wav.getUint32(40,true),6);
+assert.equal(search([{label:'빨강',text:'검사'}],'빨강').length,1);
+assert.equal(search([{label:'빨강',text:'검사'}],'온도').length,0);
+console.log('PASS: classification, WAV header, retrieval');
